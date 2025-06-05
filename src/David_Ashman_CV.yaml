@@ -1,15 +1,16 @@
 cv:
   name: David Ashman
   email: david@davidashman.me
-  # phone: +1-301-512-0606
-  website: https://www.davidashman.me
+  phone: +1-301-512-0606
+  website: https://davidashman.me
   social_networks:
   - network: LinkedIn
     username: davidbashman
   sections:
     summary:
       - |-
-        I am a passionate and accomplished technology executive with over 20 years of experience building and managing diverse, high-performing teams, with proven results leading growth and innovation for teams, products and organizations.
+        I am a passionate and accomplished technology executive with over 20 years of experience building and managing diverse, 
+        high-performing teams, with proven results leading growth and innovation for teams, products and organizations.
     experience:
     - company: '[Interfolio from Elsevier](https://www.interfolio.com)'
       position: Senior Vice President, Engineering
@@ -147,8 +148,8 @@ design:
     size: us-letter
     top_margin: 2cm
     bottom_margin: 2cm
-    left_margin: 2cm
-    right_margin: 2cm
+    left_margin: 1.8cm
+    right_margin: 1.8cm
     show_page_numbering: false
     show_last_updated_date: false
   colors:
@@ -174,7 +175,7 @@ design:
     # small_caps_for_name: true
     photo_width: 3.5cm
     vertical_space_between_name_and_connections: 0.6cm
-    vertical_space_between_connections_and_first_section: 0.6cm
+    vertical_space_between_connections_and_first_section: 0.8cm
     horizontal_space_between_connections: 0.5cm
     connections_font_family: Raleway
     separator_between_connections: ''
