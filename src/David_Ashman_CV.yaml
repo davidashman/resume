@@ -135,8 +135,8 @@ cv:
     skills:
     - label: Executive Leadership
       details: Strategic Planning, Acquisition Integration, Technical Due Diligence, Team Topologies
-    - label: Agile Methodologies
-      details: CI/CD, Infrastructure Automation, Test Automation, DevOps, Scaled Agile Framework
+    - label: Software Development Lifecycle
+      details: AI/ML Tooling, CI/CD, Infrastructure and Test Automation, DevOps, Scaled Agile Framework
     - label: Cloud Architecture
       details: SaaS Architecture, AWS, Containers, Serverless, Cloud Cost Optimization
     - label: Information Security
