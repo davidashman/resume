@@ -20,7 +20,7 @@ jobs:
           python-version: "3.12"
       - name: Install RenderCV
         run: |
-          pip install -r requirements.txt
+          pip install "rendercv[full]"
       - name: RenderCV
         run: |
           cd src
