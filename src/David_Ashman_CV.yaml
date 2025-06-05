@@ -170,8 +170,6 @@ design:
     connections_font_family: Raleway
     separator_between_connections: ''
     use_icons_for_connections: true
-    use_urls_as_placeholders_for_connections: false
-    make_connections_links: true
     alignment: left
   section_titles:
     type: with-partial-line
@@ -193,7 +191,6 @@ design:
     show_time_spans_in: []
   highlights:
     bullet: •
-    nested_bullet: '-'
     top_margin: 0.4cm
     left_margin: 0cm
     vertical_space_between_highlights: 0.25cm
