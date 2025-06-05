@@ -162,7 +162,7 @@ design:
     name_font_family: Raleway
     name_font_size: 30pt
     name_bold: false
-    small_caps_for_name: true
+    # small_caps_for_name: true
     photo_width: 3.5cm
     vertical_space_between_name_and_connections: 0.7cm
     vertical_space_between_connections_and_first_section: 0.7cm
@@ -172,7 +172,7 @@ design:
     use_icons_for_connections: true
     alignment: left
   section_titles:
-    type: with-partial-line
+    type: with-parial-line
     font_family: Raleway
     font_size: 1.4em
     bold: false
