@@ -1,0 +1,281 @@
+cv:
+  name: David Ashman
+  email: david@davidashman.me
+  phone: +1-301-512-0606
+  website: https://www.davidashman.me
+  social_networks:
+  - network: LinkedIn
+    username: davidbashman
+  sections:
+    summary:
+      - |-
+        I am a passionate and accomplished technology executive with over 20 years of experience building and managing diverse, high-performing teams, with proven results leading growth and innovation for teams, products and organizations.
+    experience:
+    - company: Interfolio from Elsevier
+      position: Senior Vice President, Engineering
+      location: Washington D.C. Metro Area
+      start_date: '2019-08-31'
+      end_date: present
+      summary: Lead Interfolio's product engineering organization, including software engineering, architecture, QA and DevOps.
+      highlights:
+      - Key leadership team member facilitating the acquisition of Interfolio by Elsevier.
+      - Championed our tier 3 support model, negotiating with an outsourced organization, evaluating talent and establishing a phased approach for success.
+      - Established a near-shore engineering strategy, partnering with a firm in Mexico to augment our engineering staff.
+      - Successfully advocated for establishing both the technical program and technical product manager roles.
+      - Increased diversity in hiring for the engineering team, especially in leadership positions.
+      - Partnered with product management to lead the adoption of the Scaled Agile Framework to improve collaboration, planning and delivery.
+      - Rearchitected and modernized the platform authorization system for scale.
+      - Established the program management office for our product organizations.
+      - Established test and deployment automation goals and recruited leadership to migrate to full test automation.
+      - Completed the migration from snowflake servers to replaceable containers, managed by automation, for all production and non-production environments.
+      - Reduced AWS costs by 25% through detailed utilization analysis.
+      - Developed automation and bots to improve release cadence, achieving over 150 releases per year.
+      - Advocated for and directed successful certification under TX-RAMP and ISO27001
+      - Responded to technical RFPs for high value multi-year subscription contracts.
+      - Defined an architecture model to support regional hosting for international customers.
+      - Defined technology and architecture roadmap to align with our product roadmap.
+      - Partnered with product management to improve visibility into our development process and metrics.
+    - company: Capital One
+      position: Head of Digital Product and Software Delivery Architecture
+      location: Washington D.C. Metro Area
+      start_date: '2018-05-31'
+      end_date: '2019-08-31'
+      summary: Oversee architecture strategy for Capital One's consumer digital products, digital commerce solutions and software delivery tools.
+      highlights:
+      - Recruited and hired experienced engineers and architects to support multiple
+        product lines and product capabilities.
+      - Represented Enterprise Architecture on the Capital One Diversity and Inclusion
+        in Technology group.
+      - Defined best practice architectures for Capital One's large-scale consumer
+        products in AWS.
+      - Led architectural design process for large consumer partnership with Walmart.
+      - Partnered with Capital One's innovation labs to evaluate projects for promotion
+        into the consumer product set.
+      - Helped consolidate the Capital One CI/CD pipelines into a single pipeline
+        across products.
+    - company: Teaching Strategies, LLC
+      position: Chief Technology Officer
+      location: Washington D.C. Metro Area
+      start_date: '2015-03-31'
+      end_date: '2018-04-30'
+      summary: Oversee the technology development, product management and production operations teams for Teaching Strategies, a leading developer of early childhood educational curriculum and assessment technology. 
+      highlights:
+      - Built a team of top talent, covering software engineering, operations engineering,
+        product design and product management.
+      - Transformed the organization from a heavily contract-based development group
+        into a fully in-house development organization.
+      - Introduced agile methodologies to improve the efficiency and transparency
+        of the development process.
+      - Introduced DevOps principles, including continuous integration and delivery,
+        configuration management and automated production monitoring.
+      - Reduced operational cost by migrating from expensive Windows infrastructure
+        to Linux.
+      - Supported sales and customer success with customer meetings and RFPs.
+    - company: Blackboard
+      position: Vice President, Chief Architect
+      location: Washington D.C. Metro Area
+      start_date: '2012-10-31'
+      end_date: '2015-03-31'
+      summary: Technical lead for the teams responsible for designing and developing Blackboard's Learn product line. 
+      highlights:
+      - Developed the product technical roadmap, overall product architecture quality
+        and best practices in quality software engineering.
+      - Led the modularization of the Learn platform architecture.
+      - Rearchitected the build and deployment process, supporting a rapid release
+        model.
+      - Led a broader strategy to transition our hosting business to a true cloud
+        platform.
+    - company: Blackboard
+      position: Principal Architect
+      location: Washington D.C. Metro Area
+      start_date: '2010-07-31'
+      end_date: '2012-10-31'
+      highlights:
+      - Defined the short term technical roadmap, overall product architecture quality
+        and best practices in quality software engineering.
+      - Worked with sales, support and consulting with client-facing issues.
+      - Supported business development with technical evaluation of products and organizations
+        considered for partnering.
+      - Developed internal training material to help mentor the internal engineering
+        staff.
+    - company: Blackboard
+      position: Director, Engineering
+      location: Washington D.C. Metro Area
+      start_date: '2008-03-31'
+      end_date: '2010-07-31'
+      highlights:
+      - Directed a team of 25 engineers within product development.
+      - Helped define a new organizational structure in engineering to better serve
+        the product development needs of Blackboard.
+      - Migrated the tier 3 support organization out of product development into the
+        client support organization.
+    - company: Blackboard
+      position: Engineering Manager
+      location: Washington D.C. Metro Area
+      start_date: '2006-10-31'
+      end_date: '2008-03-31'
+      highlights:
+      - Managed a team of engineers and architects in the Product Development division
+        of Blackboard.
+      - Helped define the role of engineering manager at Blackboard as the team grew
+        from 25 to 50 engineers.
+    - company: Blackboard
+      position: Senior Software Architect
+      location: Washington D.C. Metro Area
+      start_date: '2005-09-30'
+      end_date: '2006-10-31'
+      highlights: []
+    education:
+    - institution: Washington University in St. Louis
+      area: Computer Science
+      degree: BS
+      start_date: 1993-08
+      end_date: 1997-05
+      highlights: []
+design:
+  theme: engineeringclassic
+  page:
+    size: us-letter
+    top_margin: 2cm
+    bottom_margin: 2cm
+    left_margin: 2cm
+    right_margin: 2cm
+    show_page_numbering: false
+    show_last_updated_date: false
+  colors:
+    text: rgb(0, 0, 0)
+    name: rgb(0, 79, 144)
+    connections: rgb(0, 79, 144)
+    section_titles: rgb(0, 79, 144)
+    links: rgb(0, 79, 144)
+    last_updated_date_and_page_numbering: rgb(128, 128, 128)
+  text:
+    font_family: Raleway
+    font_size: 10pt
+    leading: 0.6em
+    alignment: justified
+    date_and_location_column_alignment: right
+  links:
+    underline: false
+    use_external_link_icon: false
+  header:
+    name_font_family: Raleway
+    name_font_size: 30pt
+    name_bold: false
+    small_caps_for_name: true
+    photo_width: 3.5cm
+    vertical_space_between_name_and_connections: 0.7cm
+    vertical_space_between_connections_and_first_section: 0.7cm
+    horizontal_space_between_connections: 0.5cm
+    connections_font_family: Raleway
+    separator_between_connections: ''
+    use_icons_for_connections: true
+    use_urls_as_placeholders_for_connections: false
+    make_connections_links: true
+    alignment: left
+  section_titles:
+    type: with-partial-line
+    font_family: Raleway
+    font_size: 1.4em
+    bold: false
+    small_caps: true
+    line_thickness: 0.5pt
+    vertical_space_above: 0.7cm
+    vertical_space_below: 0.3cm
+  entries:
+    date_and_location_width: 4.15cm
+    left_and_right_margin: 0.2cm
+    horizontal_space_between_columns: 0.1cm
+    vertical_space_between_entries: 1.8em
+    allow_page_break_in_sections: true
+    allow_page_break_in_entries: true
+    short_second_row: false
+    show_time_spans_in: []
+  highlights:
+    bullet: •
+    nested_bullet: '-'
+    top_margin: 0.4cm
+    left_margin: 0cm
+    vertical_space_between_highlights: 0.25cm
+    horizontal_space_between_bullet_and_highlight: 0.5em
+    summary_left_margin: 0cm
+  entry_types:
+    one_line_entry:
+      template: '**LABEL:** DETAILS'
+    education_entry:
+      main_column_first_row_template: |-
+        **INSTITUTION**
+        DEGREE, AREA
+      degree_column_template: ''
+      degree_column_width: 1cm
+      main_column_second_row_template: |-
+        SUMMARY
+        HIGHLIGHTS
+      date_and_location_column_template: DATE
+    normal_entry:
+      main_column_first_row_template: '**NAME** -- **LOCATION**'
+      main_column_second_row_template: |-
+        SUMMARY
+        HIGHLIGHTS
+      date_and_location_column_template: DATE
+    experience_entry:
+      main_column_first_row_template: |-
+        **POSITION**
+        COMPANY
+      main_column_second_row_template: |-
+        SUMMARY
+        HIGHLIGHTS
+      date_and_location_column_template: DATE
+    publication_entry:
+      main_column_first_row_template: '**TITLE**'
+      main_column_second_row_template: |-
+        AUTHORS
+        URL (JOURNAL)
+      main_column_second_row_without_journal_template: |-
+        AUTHORS
+        URL
+      main_column_second_row_without_url_template: |-
+        AUTHORS
+        JOURNAL
+      date_and_location_column_template: DATE
+locale:
+  language: en
+  phone_number_format: national
+  page_numbering_template: NAME - Page PAGE_NUMBER of TOTAL_PAGES
+  last_updated_date_template: Last updated in TODAY
+  date_template: MONTH_ABBREVIATION YEAR
+  month: month
+  months: months
+  year: year
+  years: years
+  present: present
+  to: –
+  abbreviations_for_months:
+    - Jan
+    - Feb
+    - Mar
+    - Apr
+    - May
+    - June
+    - July
+    - Aug
+    - Sept
+    - Oct
+    - Nov
+    - Dec
+  full_names_of_months:
+    - January
+    - February
+    - March
+    - April
+    - May
+    - June
+    - July
+    - August
+    - September
+    - October
+    - November
+    - December
+rendercv_settings:
+  date: '2025-03-01'
+  bold_keywords: []
