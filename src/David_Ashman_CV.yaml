@@ -11,7 +11,7 @@ cv:
       - |-
         I am a passionate and accomplished technology executive with over 20 years of experience building and managing diverse, high-performing teams, with proven results leading growth and innovation for teams, products and organizations.
     experience:
-    - company: '[Interfolio from Elsevier](http://www.interfolio.com)'
+    - company: '[Interfolio from Elsevier](https://www.interfolio.com)'
       position: Senior Vice President, Engineering
       location: Washington D.C. Metro Area
       start_date: '2019-08-31'
@@ -35,7 +35,7 @@ cv:
       - Defined an architecture model to support regional hosting for international customers.
       - Defined technology and architecture roadmap to align with our product roadmap.
       - Partnered with product management to improve visibility into our development process and metrics.
-    - company: Capital One
+    - company: '[Capital One](https://www.capitalone.com)'
       position: Head of Digital Product and Software Delivery Architecture
       location: Washington D.C. Metro Area
       start_date: '2018-05-31'
@@ -53,7 +53,7 @@ cv:
         into the consumer product set.
       - Helped consolidate the Capital One CI/CD pipelines into a single pipeline
         across products.
-    - company: Teaching Strategies, LLC
+    - company: '[Teaching Strategies](https://www.teachingstrategies.com)'
       position: Chief Technology Officer
       location: Washington D.C. Metro Area
       start_date: '2015-03-31'
@@ -71,7 +71,7 @@ cv:
       - Reduced operational cost by migrating from expensive Windows infrastructure
         to Linux.
       - Supported sales and customer success with customer meetings and RFPs.
-    - company: Blackboard
+    - company: '[Blackboard](https://www.blackboard.com)'
       position: Vice President, Chief Architect
       location: Washington D.C. Metro Area
       start_date: '2012-10-31'
@@ -85,7 +85,7 @@ cv:
         model.
       - Led a broader strategy to transition our hosting business to a true cloud
         platform.
-    - company: Blackboard
+    - company: '[Blackboard](https://www.blackboard.com)'
       position: Principal Architect
       location: Washington D.C. Metro Area
       start_date: '2010-07-31'
@@ -98,7 +98,7 @@ cv:
         considered for partnering.
       - Developed internal training material to help mentor the internal engineering
         staff.
-    - company: Blackboard
+    - company: '[Blackboard](https://www.blackboard.com)'
       position: Director, Engineering
       location: Washington D.C. Metro Area
       start_date: '2008-03-31'
@@ -109,7 +109,7 @@ cv:
         the product development needs of Blackboard.
       - Migrated the tier 3 support organization out of product development into the
         client support organization.
-    - company: Blackboard
+    - company: '[Blackboard](https://www.blackboard.com)'
       position: Engineering Manager
       location: Washington D.C. Metro Area
       start_date: '2006-10-31'
@@ -119,14 +119,14 @@ cv:
         of Blackboard.
       - Helped define the role of engineering manager at Blackboard as the team grew
         from 25 to 50 engineers.
-    - company: Blackboard
+    - company: '[Blackboard](https://www.blackboard.com)'
       position: Senior Software Architect
       location: Washington D.C. Metro Area
       start_date: '2005-09-30'
       end_date: '2006-10-31'
       highlights: []
     education:
-    - institution: Washington University in St. Louis
+    - institution: '[Washington University in St. Louis](https://www.washu.com)'
       area: Computer Science
       degree: BS
       start_date: 1993-08
