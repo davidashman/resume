@@ -2,8 +2,8 @@ name: Release a CV
 
 on:
   push:
-    tags:
-      - "*" # Any tag pushed to the repository
+    branches:
+      - main
       
 permissions:
   contents: write

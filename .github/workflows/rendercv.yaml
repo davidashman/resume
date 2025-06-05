@@ -1,9 +1,9 @@
 name: Render a CV
 
 on:
-  push:
-    branches:
-      - main
+  # push:
+  #   branches:
+  #     - main
   workflow_call:
 
 permissions:
