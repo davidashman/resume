@@ -126,13 +126,15 @@ cv:
       start_date: '2005-09-30'
       end_date: '2006-10-31'
       highlights: []
-    education:
-    - institution: '[Washington University in St. Louis](https://www.washu.edu)'
-      area: Computer Science
-      degree: BS
-      start_date: 1993-08
-      end_date: 1997-05
-      highlights: []
+    thought_leadership:
+    - label: '[CTO Summit - Stacks of Stacks Panel Discussion](https://ti.to/startup-cto-summit/dc/en)'
+      details: Member of a technology leadership panel discussing the impact of technology stack decisions on product success.
+    - label: '[DevOps Enterprise Summit - Keep Your Head in the Clouds](https://www.youtube.com/watch?v=SSmixnMpsI4&feature=youtu.be)'
+      details: Spoke at the inaugural DevOps Enterprise Summit on the transformation of the Blackboard Learn product into a cloud-based software as a service platform.
+    - label: '[The DevOps Handbook - Case Study: Blackboard Learn](http://itrevolution.com/devops-handbook)'
+      details: Author Gene Kim included a case study of the work I did at Blackboard to improve efficiency and release cadence.
+    - label: '[IT Revolution - Interview with David Ashman, Chief Architect at Blackboard Learn](http://itrevolution.com/interview-with-david-ashman-chief-architect-at-blackboard-learn/)'
+      details: Interviewed by IT Revolution in conjunction with my presentation at DevOps Enterprise Summit.
     skills:
     - label: Executive Leadership
       details: Strategic Planning, Acquisition Integration, Technical Due Diligence, Team Topologies
@@ -142,6 +144,12 @@ cv:
       details: SaaS Architecture, AWS, Containers, Serverless, Cloud Cost Optimization
     - label: Information Security
       details: ISO27001, TX-RAMP, Secure Coding Practices, OWASP
+    education:
+    - institution: '[Washington University in St. Louis](https://www.washu.edu)'
+      area: Computer Science
+      degree: BS
+      start_date: 1993-08
+      end_date: 1997-05
 design:
   theme: engineeringclassic
   page:
