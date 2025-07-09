@@ -3,14 +3,12 @@ cv:
   email: david@davidashman.me
   phone: +1-301-512-0606
   website: https://davidashman.me
+  photo: profile_picture.jpg
+  summary: Visionary technology executive with 20+ years of experience transforming engineering organizations. Proven track record of driving innovation, optimizing cloud architectures, and leading high-performance teams through strategic technological transitions.
   social_networks:
   - network: LinkedIn
     username: davidbashman
   sections:
-    summary:
-      - |-
-        I am a passionate and accomplished technology executive with over 20 years of experience building and managing diverse, 
-        high-performing teams, with proven results leading growth and innovation for teams, products and organizations.
     experience:
     - company: '[Interfolio from Elsevier](https://www.interfolio.com)'
       position: Senior Vice President, Engineering
@@ -19,23 +17,15 @@ cv:
       end_date: '2025-05-23'
       summary: Lead Interfolio's product engineering organization, including software engineering, architecture, QA and DevOps.
       highlights:
-      - Key leadership team member facilitating the acquisition of Interfolio by Elsevier.
-      - Championed our tier 3 support model, negotiating with an outsourced organization, evaluating talent and establishing a phased approach for success.
-      - Established a near-shore engineering strategy, partnering with a firm in Mexico to augment our engineering staff.
-      - Successfully advocated for establishing both the technical program and technical product manager roles.
-      - Increased diversity in hiring for the engineering team, especially in leadership positions.
+      - Led technology organization to 125% revenue growth and positioned Interfolio for acquisition by Elsevier.
+      - Tripled engineering team while limiting expense growth through strategic use of off-shore and near-shore engineering partners.
+      - Reduced manual testing staff by 75% by adopting a robust test automation strategy.
+      - Expanded global product reach by adding three hosting regions in AWS, including Europe, Canada and Australia.
+      - Maintained a flat AWS budget while adding regions through environment optimization, improved autoscaling and containerization.
+      - Completed the certification of Interfolio's platform under ISO27001 and TX-RAMP, enhancing security and compliance.
       - Partnered with product management to lead the adoption of the Scaled Agile Framework to improve collaboration, planning and delivery.
-      - Rearchitected and modernized the platform authorization system for scale.
-      - Established the program management office for our product organizations.
-      - Established test and deployment automation goals and recruited leadership to migrate to full test automation.
-      - Completed the migration from snowflake servers to replaceable containers, managed by automation, for all production and non-production environments.
-      - Reduced AWS costs by 25% through detailed utilization analysis.
-      - Developed automation and bots to improve release cadence, achieving over 150 releases per year.
-      - Advocated for and directed successful certification under TX-RAMP and ISO27001
-      - Responded to technical RFPs for high value multi-year subscription contracts.
-      - Defined an architecture model to support regional hosting for international customers.
-      - Defined technology and architecture roadmap to align with our product roadmap.
-      - Partnered with product management to improve visibility into our development process and metrics.
+      - Increased deployment frequency by 400% to 150+ deployments per year through CI/CD automation and bots.
+      - Partnered with product management to deliver monthly operating reports of key performance indicators (KPIs).
     - company: '[Capital One](https://www.capitalone.com)'
       position: Head of Digital Product and Software Delivery Architecture
       location: Washington D.C. Metro Area
@@ -43,17 +33,12 @@ cv:
       end_date: '2019-08-31'
       summary: Oversee architecture strategy for Capital One's consumer digital products, digital commerce solutions and software delivery tools.
       highlights:
-      - Recruited and hired experienced engineers and architects to support multiple
-        product lines and product capabilities.
-      - Represented Enterprise Architecture on the Capital One Diversity and Inclusion
-        in Technology group.
-      - Defined best practice architectures for Capital One's large-scale consumer
-        products in AWS.
       - Led architectural design process for large consumer partnership with Walmart.
-      - Partnered with Capital One's innovation labs to evaluate projects for promotion
-        into the consumer product set.
-      - Helped consolidate the Capital One CI/CD pipelines into a single pipeline
-        across products.
+      - Defined best practice architectures for Capital One's large-scale consumer products in AWS.
+      - Partnered with Capital One's innovation labs to evaluate projects for promotion into the consumer product set.
+      - Recruited and hired experienced engineers and architects to support multiple product lines and product capabilities.
+      - Represented Enterprise Architecture on the Capital One Diversity and Inclusion in Technology group.
+      - Directed consolidation of Capital One CI/CD pipelines into a single pipeline across products.
     - company: '[Teaching Strategies](https://www.teachingstrategies.com)'
       position: Chief Technology Officer
       location: Washington D.C. Metro Area
@@ -61,71 +46,31 @@ cv:
       end_date: '2018-04-30'
       summary: Oversee the technology development, product management and production operations teams for Teaching Strategies, a leading developer of early childhood educational curriculum and assessment technology. 
       highlights:
-      - Built a team of top talent, covering software engineering, operations engineering,
-        product design and product management.
-      - Transformed the organization from a heavily contract-based development group
-        into a fully in-house development organization.
-      - Introduced agile methodologies to improve the efficiency and transparency
-        of the development process.
-      - Introduced DevOps principles, including continuous integration and delivery,
-        configuration management and automated production monitoring.
-      - Reduced operational cost by migrating from expensive Windows infrastructure
-        to Linux.
-      - Supported sales and customer success with customer meetings and RFPs.
+      - Built a team of top talent, covering software engineering, operations engineering, product design and product management.
+      - Transformed the technology organization from a heavily contract-based development group into a fully in-house development organization.
+      - Reduced change failure rates to near zero by implementing a robust test automation strategy and continuous integration and delivery (CI/CD) pipelines.
+      - Reduced operational cost 30% by migrating from expensive Windows infrastructure to Linux and open source application stack.
+      - Directed SOC2 Type II certification, enhancing the security and reliability of technology platform.
     - company: '[Blackboard](https://www.blackboard.com)'
       position: Vice President, Chief Architect
       location: Washington D.C. Metro Area
-      start_date: '2012-10-31'
-      end_date: '2015-03-31'
-      summary: Technical lead for the teams responsible for designing and developing Blackboard's Learn product line. 
-      highlights:
-      - Developed the product technical roadmap, overall product architecture quality
-        and best practices in quality software engineering.
-      - Led the modularization of the Learn platform architecture.
-      - Rearchitected the build and deployment process, supporting a rapid release
-        model.
-      - Led a broader strategy to transition our hosting business to a true cloud
-        platform.
-    - company: '[Blackboard](https://www.blackboard.com)'
-      position: Principal Architect
-      location: Washington D.C. Metro Area
-      start_date: '2010-07-31'
-      end_date: '2012-10-31'
-      highlights:
-      - Defined the short term technical roadmap, overall product architecture quality
-        and best practices in quality software engineering.
-      - Worked with sales, support and consulting with client-facing issues.
-      - Supported business development with technical evaluation of products and organizations
-        considered for partnering.
-      - Developed internal training material to help mentor the internal engineering
-        staff.
-    - company: '[Blackboard](https://www.blackboard.com)'
-      position: Director, Engineering
-      location: Washington D.C. Metro Area
-      start_date: '2008-03-31'
-      end_date: '2010-07-31'
-      highlights:
-      - Directed a team of 25 engineers within product development.
-      - Helped define a new organizational structure in engineering to better serve
-        the product development needs of Blackboard.
-      - Migrated the tier 3 support organization out of product development into the
-        client support organization.
-    - company: '[Blackboard](https://www.blackboard.com)'
-      position: Engineering Manager
-      location: Washington D.C. Metro Area
-      start_date: '2006-10-31'
-      end_date: '2008-03-31'
-      highlights:
-      - Managed a team of engineers and architects in the Product Development division
-        of Blackboard.
-      - Helped define the role of engineering manager at Blackboard as the team grew
-        from 25 to 50 engineers.
-    - company: '[Blackboard](https://www.blackboard.com)'
-      position: Senior Software Architect
-      location: Washington D.C. Metro Area
       start_date: '2005-09-30'
-      end_date: '2006-10-31'
-      highlights: []
+      end_date: '2015-03-31'
+      summary: Held progressive leadership roles, ultimately serving as VP & Chief Architect for Blackboard’s flagship Learn product. 
+      highlights:
+      - Developed the product technical roadmap, overall product architecture quality and best practices in quality software engineering.
+      - Reduced time to value for customer deployments 80% by implementing a new cloud-based SaaS architecture.
+      - Delivered pluggable extension architecture to increase feature release cadence from twice a year to monthly.
+      - "**Other positions held**: Principal Architect, Director of Engineering, Engineering Manager, Senior Software Architect"
+    skills:
+    - label: Executive Leadership
+      details: Strategic Planning, Mergers and Acquisitions, Cross-functional Collaboration, Team Topologies
+    - label: Emerging Technologies
+      details: AI/ML Tooling, Agentic AI, Large Language Models
+    - label: Cloud Technologies
+      details: SaaS Architecture, AWS, Containers, Serverless, Cloud Cost Optimization, DevOps, CI/CD
+    - label: Information Security
+      details: ISO27001, TX-RAMP, Secure Coding Practices, OWASP
     thought_leadership:
     - label: '[CTO Summit - Stacks of Stacks Panel Discussion](https://ti.to/startup-cto-summit/dc/en)'
       details: Member of a technology leadership panel discussing the impact of technology stack decisions on product success.
@@ -135,15 +80,6 @@ cv:
       details: Author Gene Kim included a case study of the work I did at Blackboard to improve efficiency and release cadence.
     - label: '[IT Revolution - Interview with David Ashman, Chief Architect at Blackboard Learn](http://itrevolution.com/interview-with-david-ashman-chief-architect-at-blackboard-learn/)'
       details: Interviewed by IT Revolution in conjunction with my presentation at DevOps Enterprise Summit.
-    skills:
-    - label: Executive Leadership
-      details: Strategic Planning, Acquisition Integration, Technical Due Diligence, Team Topologies
-    - label: Software Development Lifecycle
-      details: AI/ML Tooling, CI/CD, Infrastructure and Test Automation, DevOps, Scaled Agile Framework
-    - label: Cloud Architecture
-      details: SaaS Architecture, AWS, Containers, Serverless, Cloud Cost Optimization
-    - label: Information Security
-      details: ISO27001, TX-RAMP, Secure Coding Practices, OWASP
     education:
     - institution: '[Washington University in St. Louis](https://www.washu.edu)'
       area: Computer Science
@@ -151,13 +87,13 @@ cv:
       start_date: 1993-08
       end_date: 1997-05
 design:
-  theme: engineeringclassic
+  theme: engineeringenhanced
   page:
     size: us-letter
-    top_margin: 2cm
-    bottom_margin: 2cm
-    left_margin: 1.8cm
-    right_margin: 1.8cm
+    top_margin: 1.6cm
+    bottom_margin: 1.6cm
+    left_margin: 1.6cm
+    right_margin: 1.6cm
     show_page_numbering: false
     show_last_updated_date: false
   colors:
@@ -169,7 +105,7 @@ design:
     last_updated_date_and_page_numbering: rgb(128, 128, 128)
   text:
     font_family: Raleway
-    font_size: 12pt
+    font_size: 1em
     leading: 0.6em
     alignment: justified
     date_and_location_column_alignment: right
@@ -178,15 +114,15 @@ design:
     use_external_link_icon: false
   header:
     name_font_family: Raleway
-    name_font_size: 30pt
+    name_font_size: 2.1em
     name_bold: false
     # small_caps_for_name: true
-    photo_width: 3.5cm
-    vertical_space_between_name_and_connections: 0.6cm
-    vertical_space_between_connections_and_first_section: 0.8cm
-    horizontal_space_between_connections: 0.5cm
+    photo_width: 3.8cm
+    vertical_space_between_name_and_connections: 0.3cm
+    vertical_space_between_connections_and_first_section: 1.2cm
+    horizontal_space_between_connections: 0.3cm
     connections_font_family: Raleway
-    separator_between_connections: ''
+    separator_between_connections: '|'
     use_icons_for_connections: true
     alignment: left
   section_titles:
