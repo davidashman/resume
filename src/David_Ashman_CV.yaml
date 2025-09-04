@@ -15,75 +15,69 @@ cv:
       location: Washington D.C. Metro Area
       start_date: '2019-08-31'
       end_date: '2025-05-23'
-      summary: Led Interfolio's product engineering organization, including software engineering, architecture, QA and DevOps.
+      summary: Directed global product engineering, architecture, QA, and DevOps for a SaaS leader in faculty information systems.
       highlights:
-      - Led technology organization to 125% revenue growth and positioned Interfolio for acquisition by Elsevier.
-      - Tripled engineering team while limiting expense growth through strategic use of off-shore and near-shore engineering partners.
-      - Reduced manual testing staff by 75% by adopting a robust test automation strategy.
-      - Expanded global product reach by adding three hosting regions in AWS, including Europe, Canada and Australia.
-      - Maintained a flat AWS budget while adding regions through environment optimization, improved autoscaling and containerization.
-      - Completed the certification of Interfolio's platform under ISO27001 and TX-RAMP, enhancing security and compliance.
-      - Partnered with product management to lead the adoption of the Scaled Agile Framework to improve collaboration, planning and delivery.
-      - Increased deployment frequency by 400% to 150+ deployments per year through CI/CD automation and bots.
-      - Partnered with product management to deliver monthly operating reports of key performance indicators (KPIs).
+      - Drove 125% revenue growth by scaling technology organization and positioning company for successful acquisition by Elsevier.
+      - Tripled engineering team while while optimizing spend through strategic near-shore/off-shore partnerships.
+      - Expanded global footprint with 3 new AWS regions (EU, Canada, Australia) while holding costs flat via cloud cost optimization, autoscaling, and containerization.
+      - Reduced manual QA by 75% with test automation strategy, accelerating release cycles.
+      - Increased deployment frequency 400% (to 150+ per year) with CI/CD automation and bots.
+      - Achieved ISO27001 & TX-RAMP certifications, strengthening security, compliance, and customer trust.
+      - Championed Scaled Agile Framework adoption, boosting cross-functional planning and delivery.
     - company: '[Capital One](https://www.capitalone.com)'
-      position: Head of Digital Product and Software Delivery Architecture
+      position: \nHead of Digital Product and Software Delivery Architecture
       location: Washington D.C. Metro Area
       start_date: '2018-05-31'
       end_date: '2019-08-31'
-      summary: Architecture strategy for Capital One's consumer digital products, digital commerce solutions and software delivery tools.
+      summary: Led architecture strategy for consumer digital products, e-commerce solutions, and software delivery pipelines.
       highlights:
-      - Led architectural design process for large consumer partnership with Walmart.
-      - Defined best practice architectures for Capital One's large-scale consumer products in AWS.
-      - Partnered with Capital One's innovation labs to evaluate projects for promotion into the consumer product set.
-      - Recruited and hired experienced engineers and architects to support multiple product lines and product capabilities.
-      - Represented Enterprise Architecture on the Capital One Diversity and Inclusion in Technology group.
-      - Directed consolidation of Capital One CI/CD pipelines into a single pipeline across products.
+      - Architected major Walmart partnership, designing scalable consumer product integrations.
+      - Established best-practice AWS architectures for large-scale consumer digital products.
+      - Partnered with innovation labs to transition emerging technologies into production.
+      - Consolidated CI/CD pipelines across multiple products, streamlining release management.
     - company: '[Teaching Strategies](https://www.teachingstrategies.com)'
-      position: Chief Technology Officer
+      position: \nChief Technology Officer
       location: Washington D.C. Metro Area
       start_date: '2015-03-31'
       end_date: '2018-04-30'
-      summary: Led the technology development, product management and production operations teams for Teaching Strategies, a leading developer of early childhood educational curriculum and assessment technology. 
+      summary: Oversaw technology development, product management, and operations for a leading early childhood education SaaS provider.
       highlights:
-      - Built a team of top talent, covering software engineering, operations engineering, product design and product management.
-      - Transformed the technology organization from a heavily contract-based development group into a fully in-house development organization.
-      - Reduced change failure rates to near zero by implementing a robust test automation strategy and continuous integration and delivery (CI/CD) pipelines.
-      - Reduced operational cost 30% by migrating from expensive Windows infrastructure to Linux and open source application stack.
-      - Directed SOC2 Type II certification, enhancing the security and reliability of technology platform.
+      - Rebuilt tech org from contractors to in-house talent, creating a sustainable, high-performing engineering culture.
+      - Reduced operational costs by 30% through Linux/open-source migration from legacy Windows stack.
+      - Achieved SOC2 Type II certification, elevating platform reliability and customer trust.
+      - Drove zero change failures by implementing CI/CD pipelines and test automation.
     - company: '[Blackboard](https://www.blackboard.com)'
-      position: Vice President, Chief Architect
+      position: \nVice President, Chief Architect
       location: Washington D.C. Metro Area
       start_date: '2005-09-30'
       end_date: '2015-03-31'
-      summary: Held progressive leadership roles, ultimately serving as VP & Chief Architect for Blackboard’s flagship Learn product. 
+      summary: Held progressive leadership roles culminating in VP & Chief Architect for Blackboard Learn, serving millions of students globally.
       highlights:
-      - Developed the product technical roadmap, overall product architecture quality and best practices in quality software engineering.
-      - Reduced time to value for customer deployments 80% by implementing a new cloud-based SaaS architecture.
-      - Delivered pluggable extension architecture to increase feature release cadence from twice a year to monthly.
-      - "**Other positions held**: Principal Architect, Director of Engineering, Engineering Manager, Senior Software Architect"
-    skills:
-    - label: Executive Leadership
-      details: Strategic Planning, Mergers and Acquisitions, Cross-functional Collaboration, Team Topologies
-    - label: Emerging Technologies
-      details: AI/ML Tooling, Agentic AI, Large Language Models
-    - label: Cloud Technologies
-      details: SaaS Architecture, AWS, Containers, Serverless, Cloud Cost Optimization, DevOps, CI/CD
-    - label: Information Security
-      details: ISO27001, TX-RAMP, Secure Coding Practices, OWASP
+      - Reduced customer deployment times 80% with new SaaS-based delivery model.
+      - Accelerated release cadence from biannual to monthly with pluggable extension architecture.
+      - Developed enterprise technical roadmap, modernizing architecture and ensuring product scalability.
+    core_expertise:
+      - label: Executive Leadership
+        details: Strategy, M&A, Global Team Scaling, Board & Investor Engagement
+      - label: Cloud & SaaS
+        details: AWS, Containers, Serverless, DevOps, CI/CD, Cloud Cost Optimization
+      - label: Security & Compliance
+        details: ISO27001, SOC2, TX-RAMP, OWASP, Secure Coding Practices
+      - label: Emerging Technologies
+        details: AI/ML, LLMs, Agentic AI
     thought_leadership:
-    - label: '[CTO Summit - Stacks of Stacks Panel Discussion](https://ti.to/startup-cto-summit/dc/en)'
-      details: Member of a technology leadership panel discussing the impact of technology stack decisions on product success.
-    - label: '[DevOps Enterprise Summit - Keep Your Head in the Clouds](https://www.youtube.com/watch?v=SSmixnMpsI4&feature=youtu.be)'
-      details: Spoke at the inaugural DevOps Enterprise Summit on the transformation of the Blackboard Learn product into a cloud-based software as a service platform.
-    - label: '[The DevOps Handbook - Case Study: Blackboard Learn](http://itrevolution.com/devops-handbook)'
-      details: Author Gene Kim included a case study of the work I did at Blackboard to improve efficiency and release cadence.
-    - label: '[IT Revolution - Interview with David Ashman, Chief Architect at Blackboard Learn](http://itrevolution.com/interview-with-david-ashman-chief-architect-at-blackboard-learn/)'
-      details: Interviewed by IT Revolution in conjunction with my presentation at DevOps Enterprise Summit.
+      - label: Speaker
+        details: '[CTO Summit - Stacks of Stacks Panel Discussion](https://ti.to/startup-cto-summit/dc/en)'
+      - label: Speaker
+        details: '[DevOps Enterprise Summit - Keep Your Head in the Clouds](https://www.youtube.com/watch?v=SSmixnMpsI4&feature=youtu.be)'
+      - label: Featured
+        details: '[The DevOps Handbook - Case Study: Blackboard Learn](http://itrevolution.com/devops-handbook)'
+      - label: Interviewed
+        details: '[IT Revolution - Interview with David Ashman, Chief Architect at Blackboard Learn](http://itrevolution.com/interview-with-david-ashman-chief-architect-at-blackboard-learn/)'
     education:
-    - institution: '[Washington University in St. Louis](https://www.washu.edu)'
+    - degree: BS
       area: Computer Science
-      degree: BS
+      institution: '[Washington University in St. Louis](https://www.washu.edu)'
       start_date: 1993-08
       end_date: 1997-05
 design:
@@ -105,7 +99,7 @@ design:
     last_updated_date_and_page_numbering: rgb(128, 128, 128)
   text:
     font_family: Raleway
-    font_size: 1em
+    font_size: 0.9em
     leading: 0.6em
     alignment: justified
     date_and_location_column_alignment: right
@@ -114,12 +108,12 @@ design:
     use_external_link_icon: false
   header:
     name_font_family: Raleway
-    name_font_size: 2.1em
+    name_font_size: 2.0em
     name_bold: false
     # small_caps_for_name: true
-    photo_width: 3.8cm
+    photo_width: 3.6cm
     vertical_space_between_name_and_connections: 0.3cm
-    vertical_space_between_connections_and_first_section: 1.2cm
+    vertical_space_between_connections_and_first_section: 1.0cm
     horizontal_space_between_connections: 0.3cm
     connections_font_family: Raleway
     separator_between_connections: '|'
@@ -128,43 +122,38 @@ design:
   section_titles:
     type: with-parial-line
     font_family: Raleway
-    font_size: 1.4em
+    font_size: 1.3em
     bold: false
     small_caps: true
     line_thickness: 0.5pt
-    vertical_space_above: 0.8cm
-    vertical_space_below: 0.4cm
+    vertical_space_above: 0.6cm
+    vertical_space_below: 0.3cm
   entries:
     date_and_location_width: 4.15cm
     left_and_right_margin: 0.2cm
     horizontal_space_between_columns: 0.1cm
-    vertical_space_between_entries: 1.8em
+    vertical_space_between_entries: 0.8em
     allow_page_break_in_sections: true
-    allow_page_break_in_entries: true
+    allow_page_break_in_entries: false
     short_second_row: false
     show_time_spans_in: []
   highlights:
     bullet: •
-    top_margin: 0.6cm
+    top_margin: 0.4cm
     left_margin: 0.3cm
     vertical_space_between_highlights: 0.3cm
     horizontal_space_between_bullet_and_highlight: 0.5em
     summary_left_margin: 0cm
   entry_types:
-    one_line_entry:
-      template: |-
-        **LABEL**
-        DETAILS
     education_entry:
       main_column_first_row_template: |-
-        **INSTITUTION**
-        DEGREE, AREA
+        **DEGREE, AREA** - INSTITUTION
       degree_column_template: ''
       degree_column_width: 1cm
       main_column_second_row_template: |-
         SUMMARY
         HIGHLIGHTS
-      date_and_location_column_template: DATE
+      date_and_location_column_template: ''
     normal_entry:
       main_column_first_row_template: '**NAME** -- **LOCATION**'
       main_column_second_row_template: |-
@@ -173,8 +162,7 @@ design:
       date_and_location_column_template: DATE
     experience_entry:
       main_column_first_row_template: |-
-        **POSITION,** COMPANY
-        DATE
+        **POSITION** | COMPANY | DATE
       main_column_second_row_template: |-
         SUMMARY
         HIGHLIGHTS
@@ -196,7 +184,7 @@ locale:
   phone_number_format: national
   page_numbering_template: NAME - Page PAGE_NUMBER of TOTAL_PAGES
   last_updated_date_template: Last updated in TODAY
-  date_template: MONTH_ABBREVIATION YEAR
+  date_template: YEAR
   month: month
   months: months
   year: year
