@@ -43,6 +43,13 @@
 )
 #connections(connections-list)
 
+((* if cv.title *))
+#set text(size: 1em, fill: design-colors-connections, font: design-header-connections-font-family)
+#box(
+  "<<cv.title|escape_typst_characters>>"
+)
+((* endif *))
+
 ((* if cv.summary *))
 #set text(size: 1em, fill: design-colors-connections, font: design-header-connections-font-family, style: "italic")
 #box(

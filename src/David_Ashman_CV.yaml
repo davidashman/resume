@@ -4,7 +4,7 @@ cv:
   phone: +1-301-512-0606
   website: https://davidashman.me
   photo: profile_picture.jpg
-  summary: Visionary technology executive with 20+ years of experience transforming engineering organizations. Proven track record of driving innovation, optimizing cloud architectures, and leading high-performance teams through strategic technological transitions.
+  summary: Transformational technology leader with 20+ years of experience scaling global engineering organizations, modernizing SaaS platforms, and driving innovation across education technology and enterprise software. Proven record of accelerating revenue growth, leading organizations through M&A, and building high-performance, distributed teams.
   social_networks:
   - network: LinkedIn
     username: davidbashman
@@ -111,7 +111,7 @@ design:
     name_font_size: 2.0em
     name_bold: false
     # small_caps_for_name: true
-    photo_width: 3.6cm
+    photo_width: 3.8cm
     vertical_space_between_name_and_connections: 0.3cm
     vertical_space_between_connections_and_first_section: 1.0cm
     horizontal_space_between_connections: 0.3cm
@@ -130,10 +130,10 @@ design:
     vertical_space_below: 0.3cm
   entries:
     date_and_location_width: 4.15cm
-    left_and_right_margin: 0.2cm
+    left_and_right_margin: 0cm
     horizontal_space_between_columns: 0.1cm
     vertical_space_between_entries: 0.8em
-    allow_page_break_in_sections: true
+    allow_page_break_in_sections: false
     allow_page_break_in_entries: false
     short_second_row: false
     show_time_spans_in: []
