@@ -4,12 +4,12 @@ cv:
   phone: +1-301-512-0606
   website: https://davidashman.me
   photo: profile_picture.jpg
-  summary: Transformational technology leader with 20+ years of experience scaling global engineering organizations, modernizing SaaS platforms, and driving innovation across education technology and enterprise software. Proven record of accelerating revenue growth, leading organizations through M&A, and building high-performance, distributed teams.
+  summary: Technology leader with 20+ years of experience scaling SaaS platforms, modernizing cloud architectures, and guiding companies through hypergrowth and M&A. Expert at aligning technology with business strategy, building high-performance global teams, and delivering measurable impact. Recognized for driving revenue growth while managing to budgets.
   social_networks:
   - network: LinkedIn
     username: davidbashman
   sections:
-    experience:
+    executive_experience:
     - company: '[Interfolio from Elsevier](https://www.interfolio.com)'
       position: Senior Vice President, Engineering
       location: Washington D.C. Metro Area
@@ -53,9 +53,9 @@ cv:
       end_date: '2015-03-31'
       summary: Held progressive leadership roles culminating in VP & Chief Architect for Blackboard Learn, serving millions of students globally.
       highlights:
-      - Reduced customer deployment times 80% with new SaaS-based delivery model.
+      - Cut deployment times 80% by leading SaaS transformation of Blackboard Learn.
       - Accelerated release cadence from biannual to monthly with pluggable extension architecture.
-      - Developed enterprise technical roadmap, modernizing architecture and ensuring product scalability.
+      - Owned enterprise technical roadmap, modernizing architecture and ensuring product scalability.
     core_expertise:
       - label: Executive Leadership
         details: Strategy, M&A, Global Team Scaling, Board & Investor Engagement
