@@ -9,29 +9,23 @@ cv:
   sections:
     executive_bio:
     - |-
-      David Ashman is a transformational technology executive with over 20 years of experience leading engineering organizations, scaling SaaS platforms, 
-      and guiding companies through periods of rapid growth, digital transformation, and M&A. He has built and led global teams across North America, Europe, 
-      and Asia, consistently aligning technology strategy with business outcomes to deliver measurable revenue growth, operational efficiency, and customer impact.
+      David Ashman is a transformational technology leader with a proven playbook for scaling SaaS platforms, improving margins, and preparing companies for successful 
+      exits. Over two decades, he has repeatedly built and led global engineering organizations through rapid growth, digital transformation, and M&A, delivering 
+      measurable revenue acceleration and operational efficiency.
     - |-
-      Most recently, David served as Senior Vice President of Engineering at Interfolio (acquired by Elsevier), where he tripled the size of the engineering 
-      organization while holding expense growth flat through global talent strategy. He drove 125% revenue growth, expanded the company's global AWS footprint 
-      into Europe, Canada, and Australia, and achieved ISO27001 and TX-RAMP certifications, strengthening security and compliance for higher education clients 
-      worldwide. David also increased deployment velocity by 400% with CI/CD automation and positioned Interfolio for a successful strategic acquisition.
+      As SVP of Engineering at Interfolio (acquired by Elsevier), David tripled the engineering team while holding expenses flat, driving 125% revenue growth and 
+      expanding the company’s AWS footprint globally. He accelerated deployment velocity by 400% through CI/CD automation, achieved ISO27001 and TX-RAMP certifications, 
+      and positioned the company for a strategic acquisition.
     - |-
-      Previously, as Chief Technology Officer of Teaching Strategies, David transformed the technology organization from a contractor-heavy team into a high-performing, 
-      in-house engineering culture. He reduced operational costs by 30%, achieved SOC2 Type II certification, and implemented cloud and open-source platforms that scaled with customer demand.
-    - |-
-      Earlier in his career, David served as Vice President & Chief Architect at Blackboard, where he led the transformation of Blackboard Learn into a SaaS platform. His work reduced customer 
-      deployment times by 80% and increased feature release cadence from biannual to monthly. He also held senior architecture roles at Capital One, where he guided large-scale AWS adoption 
-      and architecture for major consumer partnerships.
+      Previously, as CTO of Teaching Strategies, David reshaped a contractor-heavy team into a high-performing engineering culture, cutting operational costs by 30%, achieving 
+      SOC2 Type II compliance, and implementing cloud and open-source platforms that scaled with demand. Earlier at Blackboard, he led the SaaS transformation of Blackboard Learn, 
+      reducing deployment times by 80% and increasing release cadence from biannual to monthly.
     - |- 
-      David is recognized as a thought leader in engineering leadership and SaaS transformation. He has spoken at the CTO Summit and the DevOps Enterprise Summit, and his work has been featured 
-      in The DevOps Handbook and by IT Revolution.
+      David’s expertise spans SaaS scaling, cloud economics, security & compliance, and AI adoption. As a forward-facing technology executive, he specializes in translating AI 
+      strategy into business value, helping organizations navigate the complexities of enterprise AI implementation while maintaining operational excellence. He is a recognized 
+      thought leader, featured in The DevOps Handbook and on stage at the CTO Summit and DevOps Enterprise Summit.
     - |-
-      With deep expertise in cloud architecture, SaaS scaling, AI/ML, cybersecurity, and organizational design, David is passionate about leading technology teams that don't just ship 
-      software—they deliver meaningful impact for businesses, customers, and communities.
-    - |-
-      **Expertise:** SaaS Architecture | Cloud Cost Optimization | Security & Compliance (ISO27001, SOC2, TX-RAMP) | M&A Readiness | Global Engineering Leadership | AI/ML Adoption
+      **Expertise:** SaaS Architecture | Cloud Cost Optimization | Security & Compliance (ISO27001, SOC2, TX-RAMP) | M&A Readiness | AI Adoption | Global Engineering Leadership
 design:
   theme: engineeringenhanced
   page:
