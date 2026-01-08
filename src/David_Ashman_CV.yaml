@@ -10,6 +10,16 @@ cv:
     username: davidbashman
   sections:
     executive_experience:
+    - company: '[Archway](https://www.goarchway.com)'
+      position: Chief Technology Officer
+      location: Washington D.C. Metro Area
+      start_date: '2025-05-23'
+      end_date: present
+      summary: Factional and consulting CTO for early stage startups and scaleups.
+      highlights:
+      - Served as CTO for early-stage startup, establishing technical foundation and development practices to reach product viability
+      - Evaluated AI's transformational impact on engineering organizations, recommending structural changes to optimize team productivity and delivery velocity
+      - Developed frameworks for responsible AI product integration with student safety guardrails and content controls for education technology applications
     - company: '[Interfolio from Elsevier](https://www.interfolio.com)'
       position: Senior Vice President, Engineering
       location: Washington D.C. Metro Area
