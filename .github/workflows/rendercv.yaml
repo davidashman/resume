@@ -20,7 +20,7 @@ jobs:
           python-version: "3.12"
       - name: Install RenderCV
         run: |
-          pip install "rendercv[full]==2.2"
+          pip install "rendercv[full]==2.3"
       - name: RenderCVs
         run: |
           mkdir -p output
