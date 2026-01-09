@@ -28,6 +28,13 @@ pdfmetrics.registerFont(TTFont('Raleway-Italic', 'src/fonts/Raleway/Raleway-Ital
 pdfmetrics.registerFont(TTFont('Raleway-Medium', 'src/fonts/Raleway/Raleway-Medium.ttf'))
 pdfmetrics.registerFont(TTFont('Raleway-SemiBold', 'src/fonts/Raleway/Raleway-SemiBold.ttf'))
 
+headingColor = colors.HexColor('#204E8C')
+textColor = colors.black
+secondaryTextColor = colors.HexColor('#4A5568')
+defaultFont = 'Raleway-Regular'
+boldFont = 'Raleway-SemiBold'
+italicFont = 'Raleway-Italic'
+
 class ResumeGenerator:
     """Generate a professional resume PDF from YAML data"""
     
@@ -48,24 +55,32 @@ class ResumeGenerator:
         """Create custom paragraph styles"""
         styles = getSampleStyleSheet()
         
+        # Biography style
+        styles.add(ParagraphStyle(
+            name='ResumeNormal',
+            parent=styles['Normal'],
+            fontSize=9,
+            fontName=defaultFont,
+            textColor=textColor,
+            spaceAfter=6
+        ))
+
         # Name style - large and bold
         styles.add(ParagraphStyle(
             name='Name',
             parent=styles['Heading1'],
             fontSize=20,
-            textColor=colors.HexColor('#204E8C'),  # Dark blue
+            textColor=headingColor,
             spaceAfter=12,
-            fontName='Raleway-Regular'
+            fontName=defaultFont
         ))
         
         # Contact info style
         styles.add(ParagraphStyle(
             name='Contact',
-            parent=styles['Normal'],
-            fontSize=9,
-            textColor=colors.HexColor('#204E8C'),
+            parent=styles['ResumeNormal'],
+            textColor=headingColor,
             spaceAfter=9,
-            fontName='Raleway-Regular'
         ))
         
         # Summary style
@@ -73,90 +88,67 @@ class ResumeGenerator:
             name='Summary',
             parent=styles['Normal'],
             fontSize=10,
-            textColor=colors.HexColor('#204E8C'),  # Gray
+            textColor=headingColor, 
             spaceAfter=0,
             leading=14,
             rightIndent=100,
-            fontName='Raleway-Italic'
+            fontName=italicFont
         ))
         
         # Section header style
         styles.add(ParagraphStyle(
             name='SectionHeader',
             parent=styles['Heading2'],
-            fontSize=11,
-            textColor=colors.HexColor('#204E8C'),
+            fontSize=10,
+            textColor=headingColor,
             spaceAfter=4,
             spaceBefore=8,
-            fontName='Raleway-Regular'
+            fontName=defaultFont
         ))
         
         # Job title style
         styles.add(ParagraphStyle(
             name='JobTitle',
-            parent=styles['Normal'],
+            parent=styles['ResumeNormal'],
             fontSize=10,
-            fontName='Raleway-Regular',
-            textColor=colors.black,
-            spaceAfter=4
-        ))
-        
-        # Company/date style
-        styles.add(ParagraphStyle(
-            name='CompanyDate',
-            parent=styles['Normal'],
-            fontSize=10,
-            textColor=colors.HexColor('#4A5568'),
             spaceAfter=4,
-            fontName='Raleway-Regular',
+            spaceBefore=7,
         ))
         
         # Summary line style
         styles.add(ParagraphStyle(
             name='RoleSummary',
-            parent=styles['Normal'],
-            fontSize=9,
-            textColor=colors.HexColor('#4A5568'),
-            spaceAfter=6,
-            fontName='Raleway-Regular'
+            parent=styles['ResumeNormal'],
+            textColor=secondaryTextColor,
+            spaceAfter=5,
         ))
         
         # Bullet point style
         styles.add(ParagraphStyle(
             name='ResumeBullet',
-            parent=styles['Normal'],
-            fontSize=9,
-            textColor=colors.black,
-            leftIndent=14,  # Where the text content starts
-            firstLineIndent=-6,  # Negative value brings bullet back left
+            parent=styles['ResumeNormal'],
+            leftIndent=14,
+            firstLineIndent=-6,
             spaceAfter=4,
             leading=11,
-            fontName='Raleway-Regular'
         ))
         
         # Expertise label style
         styles.add(ParagraphStyle(
             name='Expertise',
-            parent=styles['Normal'],
-            fontSize=9,
-            fontName='Raleway-Regular',
-            textColor=colors.black,
-            spaceAfter=2
+            parent=styles['ResumeNormal'],
+            spaceAfter=2,
         ))
         
         # Biography style
         styles.add(ParagraphStyle(
             name='Biography',
-            parent=styles['Normal'],
-            fontSize=9,
-            fontName='Raleway-Regular',
-            textColor=colors.black,
-            spaceAfter=6
+            parent=styles['ResumeNormal']
         ))
         
         return styles
     
-    def __paragraph_with_larger_first_letter(self, text, style):
+    def _paragraph_with_larger_first_letter(self, text, style):
         """Format section header text with larger first letter of each word"""
         words = text.split()
         formatted_words = []
@@ -215,7 +207,7 @@ class ResumeGenerator:
             self.story.append(Spacer(1, -1.5*inch))  # Move back up
         
         # Name
-        name = self.__paragraph_with_larger_first_letter(cv['name'], self.styles['Name'])
+        name = self._paragraph_with_larger_first_letter(cv['name'], self.styles['Name'])
         self.story.append(name)
         
         # Contact info in one line
@@ -242,7 +234,7 @@ class ResumeGenerator:
             self.story.append(summary)
         
         # Horizontal line
-        self.story.append(Spacer(1, 0.06*inch))
+        self.story.append(Spacer(1, 0.04*inch))
     
     def _add_experience(self):
         """Add executive experience section"""
@@ -253,7 +245,7 @@ class ResumeGenerator:
             return
         
         # Section header
-        header = self.__paragraph_with_larger_first_letter("Executive Experience", self.styles['SectionHeader'])
+        header = self._paragraph_with_larger_first_letter("Executive Experience", self.styles['SectionHeader'])
         self.story.append(header)
         
         for job in sections['executive_experience']:
@@ -288,7 +280,7 @@ class ResumeGenerator:
                     bullet = Paragraph(bullet_text, self.styles['ResumeBullet'])
                     job_elements.append(bullet)
             
-            job_elements.append(Spacer(1, 0.06*inch))
+            # job_elements.append(Spacer(1, 0.06*inch))
             
             # Keep job together on same page
             self.story.append(KeepTogether(job_elements))
@@ -302,7 +294,7 @@ class ResumeGenerator:
             return
         
         # Section header
-        header = self.__paragraph_with_larger_first_letter("Core Expertise", self.styles['SectionHeader'])
+        header = self._paragraph_with_larger_first_letter("Core Expertise", self.styles['SectionHeader'])
         self.story.append(header)
         
         for item in sections['core_expertise']:
@@ -320,7 +312,7 @@ class ResumeGenerator:
             return
         
         # Section header
-        header = self.__paragraph_with_larger_first_letter("Thought Leadership", self.styles['SectionHeader'])
+        header = self._paragraph_with_larger_first_letter("Thought Leadership", self.styles['SectionHeader'])
         self.story.append(header)
         
         for item in sections['thought_leadership']:
@@ -342,7 +334,7 @@ class ResumeGenerator:
             return
         
         # Section header
-        header = self.__paragraph_with_larger_first_letter("Education", self.styles['SectionHeader'])
+        header = self._paragraph_with_larger_first_letter("Education", self.styles['SectionHeader'])
         self.story.append(header)
         
         for edu in sections['education']:
@@ -362,7 +354,7 @@ class ResumeGenerator:
             return
         
         # Section header
-        header = self.__paragraph_with_larger_first_letter("Executive Biography", self.styles['SectionHeader'])
+        header = self._paragraph_with_larger_first_letter("Executive Biography", self.styles['SectionHeader'])
         self.story.append(header)
         
         for executive_bio in sections['executive_bio']:
