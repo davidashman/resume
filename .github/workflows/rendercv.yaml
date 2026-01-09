@@ -20,16 +20,13 @@ jobs:
           python-version: "3.12"
       - name: Install RenderCV
         run: |
-          pip install "rendercv[full]==2.3"
-      - name: RenderCVs
+          pip install pyyaml reportlab --break-system-packages
+      - name: Render CVs
         run: |
           mkdir -p output
-          for cv_path in $(find src  -maxdepth 1 -type f -name "*.yaml"); do
-            cv_file=$(basename $cv_path)
-            rendercv render $cv_path --pdf-path output/${cv_file%.yaml}.pdf
-          done
-      - name: Upload rendercv_output as an artifact
+          python src/generate_resume_pdf.py src/David_Ashman_CV.yaml output/David_Ashman_CV.pdf output/David_Ashman_Bio.pdf
+      - name: Upload 
         uses: actions/upload-artifact@v4
         with:
-          name: RenderCV Output
+          name: Render CV Output
           path: output

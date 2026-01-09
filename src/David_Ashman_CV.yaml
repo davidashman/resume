@@ -1,9 +1,9 @@
 cv:
   name: David Ashman
   email: david@davidashman.me
-  phone: +1-301-512-0606
-  website: https://davidashman.me
-  photo: profile_picture.jpg
+  phone: 301-512-0606
+  website: www.davidashman.me
+  photo: profile_picture.png
   summary: Technology leader with 20+ years of experience scaling SaaS platforms, modernizing cloud architectures, and guiding companies through hypergrowth and M&A. Expert at aligning technology with business strategy, building high-performance global teams, and delivering measurable impact. Recognized for driving revenue growth while managing to budgets.
   social_networks:
   - network: LinkedIn
@@ -35,7 +35,7 @@ cv:
       - Achieved ISO27001 & TX-RAMP certifications, strengthening security, compliance, and customer trust.
       - Championed Scaled Agile Framework adoption, boosting cross-functional planning and delivery.
     - company: '[Capital One](https://www.capitalone.com)'
-      position: \nHead of Digital Product and Software Delivery Architecture
+      position: Head of Digital Product and Software Delivery Architecture
       location: Washington D.C. Metro Area
       start_date: '2018-05-31'
       end_date: '2019-08-31'
@@ -46,7 +46,7 @@ cv:
       - Partnered with innovation labs to transition emerging technologies into production.
       - Consolidated CI/CD pipelines across multiple products, streamlining release management.
     - company: '[Teaching Strategies](https://www.teachingstrategies.com)'
-      position: \nChief Technology Officer
+      position: Chief Technology Officer
       location: Washington D.C. Metro Area
       start_date: '2015-03-31'
       end_date: '2018-04-30'
@@ -57,7 +57,7 @@ cv:
       - Achieved SOC2 Type II certification, elevating platform reliability and customer trust.
       - Drove zero change failures by implementing CI/CD pipelines and test automation.
     - company: '[Blackboard](https://www.blackboard.com)'
-      position: \nVice President, Chief Architect
+      position: Vice President, Chief Architect
       location: Washington D.C. Metro Area
       start_date: '2005-09-30'
       end_date: '2015-03-31'
@@ -90,143 +90,20 @@ cv:
       institution: '[Washington University in St. Louis](https://www.washu.edu)'
       start_date: 1993-08
       end_date: 1997-05
-design:
-  theme: engineeringenhanced
-  page:
-    size: us-letter
-    top_margin: 1.6cm
-    bottom_margin: 1.6cm
-    left_margin: 1.6cm
-    right_margin: 1.6cm
-    show_page_numbering: false
-    show_last_updated_date: false
-  colors:
-    text: rgb(0, 0, 0)
-    name: rgb(0, 79, 144)
-    connections: rgb(0, 79, 144)
-    section_titles: rgb(0, 79, 144)
-    links: rgb(0, 79, 144)
-    last_updated_date_and_page_numbering: rgb(128, 128, 128)
-  text:
-    font_family: Raleway
-    font_size: 0.9em
-    leading: 0.6em
-    alignment: justified
-    date_and_location_column_alignment: right
-  links:
-    underline: false
-    use_external_link_icon: false
-  header:
-    name_font_family: Raleway
-    name_font_size: 2.0em
-    name_bold: false
-    # small_caps_for_name: true
-    photo_width: 3.8cm
-    vertical_space_between_name_and_connections: 0.3cm
-    vertical_space_between_connections_and_first_section: 1.0cm
-    horizontal_space_between_connections: 0.3cm
-    connections_font_family: Raleway
-    separator_between_connections: '|'
-    use_icons_for_connections: true
-    alignment: left
-  section_titles:
-    type: with-parial-line
-    font_family: Raleway
-    font_size: 1.3em
-    bold: false
-    small_caps: true
-    line_thickness: 0.5pt
-    vertical_space_above: 0.6cm
-    vertical_space_below: 0.3cm
-  entries:
-    date_and_location_width: 4.15cm
-    left_and_right_margin: 0cm
-    horizontal_space_between_columns: 0.1cm
-    vertical_space_between_entries: 0.8em
-    allow_page_break_in_sections: false
-    allow_page_break_in_entries: false
-    short_second_row: false
-    show_time_spans_in: []
-  highlights:
-    bullet: •
-    top_margin: 0.4cm
-    left_margin: 0.3cm
-    vertical_space_between_highlights: 0.3cm
-    horizontal_space_between_bullet_and_highlight: 0.5em
-    summary_left_margin: 0cm
-  entry_types:
-    education_entry:
-      main_column_first_row_template: |-
-        **DEGREE, AREA** - INSTITUTION
-      degree_column_template: ''
-      degree_column_width: 1cm
-      main_column_second_row_template: |-
-        SUMMARY
-        HIGHLIGHTS
-      date_and_location_column_template: ''
-    normal_entry:
-      main_column_first_row_template: '**NAME** -- **LOCATION**'
-      main_column_second_row_template: |-
-        SUMMARY
-        HIGHLIGHTS
-      date_and_location_column_template: DATE
-    experience_entry:
-      main_column_first_row_template: |-
-        **POSITION** | COMPANY | DATE
-      main_column_second_row_template: |-
-        SUMMARY
-        HIGHLIGHTS
-      date_and_location_column_template: ''
-    publication_entry:
-      main_column_first_row_template: '**TITLE**'
-      main_column_second_row_template: |-
-        AUTHORS
-        URL (JOURNAL)
-      main_column_second_row_without_journal_template: |-
-        AUTHORS
-        URL
-      main_column_second_row_without_url_template: |-
-        AUTHORS
-        JOURNAL
-      date_and_location_column_template: DATE
-locale:
-  language: en
-  phone_number_format: national
-  page_numbering_template: NAME - Page PAGE_NUMBER of TOTAL_PAGES
-  last_updated_date_template: Last updated in TODAY
-  date_template: YEAR
-  month: month
-  months: months
-  year: year
-  years: years
-  present: present
-  to: –
-  abbreviations_for_months:
-    - Jan
-    - Feb
-    - Mar
-    - Apr
-    - May
-    - June
-    - July
-    - Aug
-    - Sept
-    - Oct
-    - Nov
-    - Dec
-  full_names_of_months:
-    - January
-    - February
-    - March
-    - April
-    - May
-    - June
-    - July
-    - August
-    - September
-    - October
-    - November
-    - December
-rendercv_settings:
-  date: '2025-03-01'
-  bold_keywords: []
+    executive_bio:
+    - |-
+      David Ashman is a transformational technology leader with a proven playbook for scaling SaaS platforms, improving margins, and preparing companies for successful 
+      exits. Over two decades, he has repeatedly built and led global engineering organizations through rapid growth, digital transformation, and M&A, delivering 
+      measurable revenue acceleration and operational efficiency.
+    - |-
+      As SVP of Engineering at Interfolio (acquired by Elsevier), David tripled the engineering team while holding expenses flat, driving 125% revenue growth and 
+      expanding the company’s AWS footprint globally. He accelerated deployment velocity by 400% through CI/CD automation, achieved ISO27001 and TX-RAMP certifications, 
+      and positioned the company for a strategic acquisition.
+    - |-
+      Previously, as CTO of Teaching Strategies, David reshaped a contractor-heavy team into a high-performing engineering culture, cutting operational costs by 30%, achieving 
+      SOC2 Type II compliance, and implementing cloud and open-source platforms that scaled with demand. Earlier at Blackboard, he led the SaaS transformation of Blackboard Learn, 
+      reducing deployment times by 80% and increasing release cadence from biannual to monthly.
+    - |- 
+      David’s expertise spans SaaS scaling, cloud economics, security & compliance, and AI adoption. As a forward-facing technology executive, he specializes in translating AI 
+      strategy into business value, helping organizations navigate the complexities of enterprise AI implementation while maintaining operational excellence. He is a recognized 
+      thought leader, featured in The DevOps Handbook and on stage at the CTO Summit and DevOps Enterprise Summit.

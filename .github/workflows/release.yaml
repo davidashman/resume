@@ -19,10 +19,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Download RenderCV Output
+      - name: Download
         uses: actions/download-artifact@v4
         with:
-          name: RenderCV Output
+          name: Render CV Output
           path: output
       - name: Release
         uses: softprops/action-gh-release@v2

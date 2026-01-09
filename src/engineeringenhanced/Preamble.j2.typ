@@ -1,456 +1,83 @@
+// Import the rendercv function and all the refactored components
+#import "@preview/rendercv:0.1.0": *
 
-((* set page_numbering_template_placeholders = {
-    "NAME": cv.name,
-    "PAGE_NUMBER": "\" + str(here().page()) + \"",
-    "TOTAL_PAGES": "\" + str(counter(page).final().first()) + \"",
-    "TODAY": today
-} *))
-((* set last_updated_date_template_placeholders = {
-    "TODAY": today,
-} *))
-#import "@preview/fontawesome:0.5.0": fa-icon
-
-#let name = "<<cv.name|remove_typst_commands>>"
-#let locale-catalog-page-numbering-style = context { "<<locale.page_numbering_template|replace_placeholders_with_actual_values(page_numbering_template_placeholders)>>" }
-#let locale-catalog-last-updated-date-style = "<<locale.last_updated_date_template|replace_placeholders_with_actual_values(last_updated_date_template_placeholders)>>"
-#let locale-catalog-language = "<<locale.language>>"
-#let design-page-size = "<<design.page.size>>"
-#let design-colors-text = <<design.colors.text.as_rgb()>>
-#let design-colors-section-titles = <<design.colors.section_titles.as_rgb()>>
-#let design-colors-last-updated-date-and-page-numbering = <<design.colors.last_updated_date_and_page_numbering.as_rgb()>>
-#let design-colors-name = <<design.colors.name.as_rgb()>>
-#let design-colors-connections = <<design.colors.connections.as_rgb()>>
-#let design-colors-links = <<design.colors.links.as_rgb()>>
-#let design-section-titles-font-family = "<<design.section_titles.font_family>>"
-#let design-section-titles-bold = <<design.section_titles.bold|lower>>
-#let design-section-titles-line-thickness = <<design.section_titles.line_thickness>>
-#let design-section-titles-font-size = <<design.section_titles.font_size>>
-#let design-section-titles-type = "<<design.section_titles.type>>"
-#let design-section-titles-vertical-space-above = <<design.section_titles.vertical_space_above>>
-#let design-section-titles-vertical-space-below = <<design.section_titles.vertical_space_below>>
-#let design-section-titles-small-caps = <<design.section_titles.small_caps|lower>>
-#let design-links-use-external-link-icon = <<design.links.use_external_link_icon|lower>>
-#let design-text-font-size = <<design.text.font_size>>
-#let design-text-leading = <<design.text.leading>>
-#let design-text-font-family = "<<design.text.font_family>>"
-#let design-text-alignment = "<<design.text.alignment>>"
-#let design-text-date-and-location-column-alignment = <<design.text.date_and_location_column_alignment>>
-#let design-header-photo-width = <<design.header.photo_width>>
-#let design-header-use-icons-for-connections = <<design.header.use_icons_for_connections|lower>>
-#let design-header-name-font-family = "<<design.header.name_font_family>>"
-#let design-header-name-font-size = <<design.header.name_font_size>>
-#let design-header-name-bold = <<design.header.name_bold|lower>>
-#let design-header-small-caps-for-name = true
-#let design-header-connections-font-family = "<<design.header.connections_font_family>>"
-#let design-header-vertical-space-between-name-and-connections = <<design.header.vertical_space_between_name_and_connections>>
-#let design-header-vertical-space-between-connections-and-first-section = <<design.header.vertical_space_between_connections_and_first_section>>
-#let design-header-use-icons-for-connections = <<design.header.use_icons_for_connections|lower>>
-#let design-header-horizontal-space-between-connections = <<design.header.horizontal_space_between_connections>>
-#let design-header-separator-between-connections = "<<design.header.separator_between_connections>>"
-#let design-header-alignment = <<design.header.alignment>>
-#let design-highlights-summary-left-margin = <<design.highlights.summary_left_margin>>
-#let design-highlights-bullet = "<<design.highlights.bullet>>"
-#let design-highlights-nested-bullet = "<<design.highlights.nested_bullet>>"
-#let design-highlights-top-margin = <<design.highlights.top_margin>>
-#let design-highlights-left-margin = <<design.highlights.left_margin>>
-#let design-highlights-vertical-space-between-highlights = <<design.highlights.vertical_space_between_highlights>>
-#let design-highlights-horizontal-space-between-bullet-and-highlights = <<design.highlights.horizontal_space_between_bullet_and_highlight>>
-#let design-entries-vertical-space-between-entries = <<design.entries.vertical_space_between_entries>>
-#let design-entries-date-and-location-width = <<design.entries.date_and_location_width>>
-#let design-entries-allow-page-break-in-entries = <<design.entries.allow_page_break_in_entries|lower>>
-#let design-entries-horizontal-space-between-columns = <<design.entries.horizontal_space_between_columns>>
-#let design-entries-left-and-right-margin = <<design.entries.left_and_right_margin>>
-#let design-page-top-margin = <<design.page.top_margin>>
-#let design-page-bottom-margin = <<design.page.bottom_margin>>
-#let design-page-left-margin = <<design.page.left_margin>>
-#let design-page-right-margin = <<design.page.right_margin>>
-#let design-page-show-last-updated-date = <<design.page.show_last_updated_date|lower>>
-#let design-page-show-page-numbering = <<design.page.show_page_numbering|lower>>
-#let design-links-underline = <<design.links.underline|lower>>
-#let design-entry-types-education-entry-degree-column-width = <<design.entry_types.education_entry.degree_column_width>>
-#let date = datetime.today()
-
-// Metadata:
-#set document(author: name, title: name + "'s CV", date: date)
-
-// Page settings:
-#set page(
-  margin: (
-    top: design-page-top-margin,
-    bottom: design-page-bottom-margin,
-    left: design-page-left-margin,
-    right: design-page-right-margin,
+// Apply the rendercv template with custom configuration
+#show: rendercv.with(
+  name: "{{ cv.name }}",
+  footer: context { [#emph[{{ cv.name }} -- #str(here().page())\/#str(counter(page).final().first())]] },
+  top-note: [ #emph[Last updated in {{ settings.current_date.strftime('%b %Y') }}] ],
+  locale-catalog-language: "{{ locale.language_iso_639_1|default('en') }}",
+  page-size: "{{ design.page.size }}",
+  page-top-margin: {{ design.page.top_margin }},
+  page-bottom-margin: {{ design.page.bottom_margin }},
+  page-left-margin: {{ design.page.left_margin }},
+  page-right-margin: {{ design.page.right_margin }},
+  page-show-footer: {{ design.page.show_footer|default(true)|lower }},
+  page-show-top-note: {{ design.page.show_top_note|default(true)|lower }},
+  colors-body: {% if design.colors.body %}{{ design.colors.body.as_rgb() }}{% else %}rgb(0, 0, 0){% endif %},
+  colors-name: {{ design.colors.name.as_rgb() }},
+  colors-headline: {% if design.colors.headline %}{{ design.colors.headline.as_rgb() }}{% else %}{{ design.colors.name.as_rgb() }}{% endif %},
+  colors-connections: {{ design.colors.connections.as_rgb() }},
+  colors-section-titles: {{ design.colors.section_titles.as_rgb() }},
+  colors-links: {{ design.colors.links.as_rgb() }},
+  colors-footer: {% if design.colors.footer %}{{ design.colors.footer.as_rgb() }}{% else %}rgb(128, 128, 128){% endif %},
+  colors-top-note: {% if design.colors.top_note %}{{ design.colors.top_note.as_rgb() }}{% else %}rgb(128, 128, 128){% endif %},
+  typography-line-spacing: {% if design.typography.line_spacing %}{{ design.typography.line_spacing }}{% else %}0.6em{% endif %},
+  typography-alignment: "{% if design.typography.alignment %}{{ design.typography.alignment }}{% else %}justified{% endif %}",
+  typography-date-and-location-column-alignment: {% if design.typography.date_and_location_column_alignment %}{{ design.typography.date_and_location_column_alignment }}{% else %}right{% endif %},
+  typography-font-family-body: "{% if design.typography.font_family.body %}{{ design.typography.font_family.body }}{% else %}Raleway{% endif %}",
+  typography-font-family-name: "{% if design.typography.font_family.name %}{{ design.typography.font_family.name }}{% elif design.header.name_font_family %}{{ design.header.name_font_family }}{% else %}Raleway{% endif %}",
+  typography-font-family-headline: "{% if design.typography.font_family.headline %}{{ design.typography.font_family.headline }}{% elif design.header.name_font_family %}{{ design.header.name_font_family }}{% else %}Raleway{% endif %}",
+  typography-font-family-connections: "{% if design.typography.font_family.connections %}{{ design.typography.font_family.connections }}{% elif design.header.connections_font_family %}{{ design.header.connections_font_family }}{% else %}Raleway{% endif %}",
+  typography-font-family-section-titles: "{% if design.typography.font_family.section_titles %}{{ design.typography.font_family.section_titles }}{% elif design.section_titles.font_family %}{{ design.section_titles.font_family }}{% else %}Raleway{% endif %}",
+  typography-font-size-body: {% if design.typography.font_size.body %}{{ design.typography.font_size.body }}{% else %}0.9em{% endif %},
+  typography-font-size-name: {% if design.typography.font_size.name %}{{ design.typography.font_size.name }}{% elif design.header.name_font_size %}{{ design.header.name_font_size }}{% else %}2.0em{% endif %},
+  typography-font-size-headline: {% if design.typography.font_size.headline %}{{ design.typography.font_size.headline }}{% elif design.header.name_font_size %}{{ design.header.name_font_size }}{% else %}1.0em{% endif %},
+  typography-font-size-connections: {% if design.typography.font_size.connections %}{{ design.typography.font_size.connections }}{% elif design.header.connections_font_size %}{{ design.header.connections_font_size }}{% else %}0.85em{% endif %},
+  typography-font-size-section-titles: {% if design.typography.font_size.section_titles %}{{ design.typography.font_size.section_titles }}{% elif design.section_titles.font_size %}{{ design.section_titles.font_size }}{% else %}1.3em{% endif %},
+  typography-small-caps-name: {% if design.typography.small_caps.name %}{{ design.typography.small_caps.name|lower }}{% elif design.header.small_caps_for_name %}{{ design.header.small_caps_for_name|lower }}{% else %}false{% endif %},
+  typography-small-caps-headline: {% if design.typography.small_caps.headline %}{{ design.typography.small_caps.headline|lower }}{% else %}false{% endif %},
+  typography-small-caps-connections: {% if design.typography.small_caps.connections %}{{ design.typography.small_caps.connections|lower }}{% else %}false{% endif %},
+  typography-small-caps-section-titles: {% if design.typography.small_caps.section_titles %}{{ design.typography.small_caps.section_titles|lower }}{% elif design.section_titles.small_caps %}{{ design.section_titles.small_caps|lower }}{% else %}false{% endif %},
+  typography-bold-name: {% if design.typography.bold.name %}{{ design.typography.bold.name|lower }}{% elif design.header.name_bold %}{{ design.header.name_bold|lower }}{% else %}false{% endif %},
+  typography-bold-headline: {% if design.typography.bold.headline %}{{ design.typography.bold.headline|lower }}{% else %}false{% endif %},
+  typography-bold-connections: {% if design.typography.bold.connections %}{{ design.typography.bold.connections|lower }}{% else %}false{% endif %},
+  typography-bold-section-titles: {% if design.typography.bold.section_titles %}{{ design.typography.bold.section_titles|lower }}{% elif design.section_titles.bold %}{{ design.section_titles.bold|lower }}{% else %}false{% endif %},
+  links-underline: {{ design.links.underline|lower }},
+  links-show-external-link-icon: {% if design.links.show_external_link_icon %}{{ design.links.show_external_link_icon|lower }}{% else %}false{% endif %},
+  header-alignment: {{ design.header.alignment }},
+  header-photo-width: {{ design.header.photo_width }},
+  header-space-below-name: {% if design.header.space_below_name %}{{ design.header.space_below_name }}{% elif design.header.vertical_space_between_name_and_connections %}{{ design.header.vertical_space_between_name_and_connections }}{% else %}0.3cm{% endif %},
+  header-space-below-headline: {% if design.header.space_below_headline %}{{ design.header.space_below_headline }}{% else %}0.3cm{% endif %},
+  header-space-below-connections: {% if design.header.space_below_connections %}{{ design.header.space_below_connections }}{% elif design.header.vertical_space_between_connections_and_first_section %}{{ design.header.vertical_space_between_connections_and_first_section }}{% else %}1.0cm{% endif %},
+  header-connections-hyperlink: {% if design.header.connections.hyperlink %}{{ design.header.connections.hyperlink|lower }}{% else %}true{% endif %},
+  header-connections-show-icons: {% if design.header.connections.show_icons %}{{ design.header.connections.show_icons|lower }}{% elif design.header.use_icons_for_connections %}{{ design.header.use_icons_for_connections|lower }}{% else %}false{% endif %},
+  header-connections-display-urls-instead-of-usernames: {% if design.header.connections.display_urls_instead_of_usernames %}{{ design.header.connections.display_urls_instead_of_usernames|lower }}{% else %}false{% endif %},
+  header-connections-separator: "{% if design.header.connections.separator %}{{ design.header.connections.separator }}{% elif design.header.separator_between_connections %}{{ design.header.separator_between_connections }}{% else %}|{% endif %}",
+  header-connections-space-between-connections: {% if design.header.connections.space_between_connections %}{{ design.header.connections.space_between_connections }}{% elif design.header.horizontal_space_between_connections %}{{ design.header.horizontal_space_between_connections }}{% else %}0.3cm{% endif %},
+  section-titles-type: "{{ design.section_titles.type }}",
+  section-titles-line-thickness: {{ design.section_titles.line_thickness }},
+  section-titles-space-above: {% if design.section_titles.space_above %}{{ design.section_titles.space_above }}{% elif design.section_titles.vertical_space_above %}{{ design.section_titles.vertical_space_above }}{% else %}0.5cm{% endif %},
+  section-titles-space-below: {% if design.section_titles.space_below %}{{ design.section_titles.space_below }}{% elif design.section_titles.vertical_space_below %}{{ design.section_titles.vertical_space_below }}{% else %}0.3cm{% endif %},
+  sections-allow-page-break: {% if design.sections.allow_page_break %}{{ design.sections.allow_page_break|lower }}{% elif design.entries.allow_page_break_in_sections %}{{ design.entries.allow_page_break_in_sections|lower }}{% else %}true{% endif %},
+  sections-space-between-text-based-entries: {% if design.sections.space_between_text_based_entries %}{{ design.sections.space_between_text_based_entries }}{% else %}0.3em{% endif %},
+  sections-space-between-regular-entries: {% if design.sections.space_between_regular_entries %}{{ design.sections.space_between_regular_entries }}{% elif design.entries.vertical_space_between_entries %}{{ design.entries.vertical_space_between_entries }}{% else %}1.2em{% endif %},
+  entries-date-and-location-width: {{ design.entries.date_and_location_width }},
+  entries-side-space: {% if design.entries.side_space %}{{ design.entries.side_space }}{% elif design.entries.left_and_right_margin %}{{ design.entries.left_and_right_margin }}{% else %}0.2cm{% endif %},
+  entries-space-between-columns: {% if design.entries.space_between_columns %}{{ design.entries.space_between_columns }}{% elif design.entries.horizontal_space_between_columns %}{{ design.entries.horizontal_space_between_columns }}{% else %}0.1cm{% endif %},
+  entries-allow-page-break: {% if design.entries.allow_page_break %}{{ design.entries.allow_page_break|lower }}{% elif design.entries.allow_page_break_in_entries %}{{ design.entries.allow_page_break_in_entries|lower }}{% else %}false{% endif %},
+  entries-short-second-row: {{ design.entries.short_second_row|lower }},
+  entries-summary-space-left: {% if design.entries.summary.space_left %}{{ design.entries.summary.space_left }}{% elif design.highlights.summary_left_margin %}{{ design.highlights.summary_left_margin }}{% else %}0cm{% endif %},
+  entries-summary-space-above: {% if design.entries.summary.space_above %}{{ design.entries.summary.space_above }}{% elif design.highlights.top_margin %}{{ design.highlights.top_margin }}{% else %}0.12cm{% endif %},
+  entries-highlights-bullet: {% if design.entries.highlights.bullet == "●" %} text(13pt, [•], baseline: -0.6pt) {% else %} "{% if design.entries.highlights.bullet %}{{ design.entries.highlights.bullet }}{% elif design.highlights.bullet %}{{ design.highlights.bullet }}{% else %}•{% endif %}" {% endif %},
+  entries-highlights-nested-bullet: {% if design.entries.highlights.nested_bullet == "●" %} text(13pt, [•], baseline: -0.6pt) {% else %} "{% if design.entries.highlights.nested_bullet %}{{ design.entries.highlights.nested_bullet }}{% elif design.highlights.bullet %}{{ design.highlights.bullet }}{% else %}•{% endif %}" {% endif %},
+  entries-highlights-space-left: {% if design.entries.highlights.space_left %}{{ design.entries.highlights.space_left }}{% elif design.highlights.left_margin %}{{ design.highlights.left_margin }}{% else %}0cm{% endif %},
+  entries-highlights-space-above: {% if design.entries.highlights.space_above %}{{ design.entries.highlights.space_above }}{% elif design.highlights.top_margin %}{{ design.highlights.top_margin }}{% else %}0.12cm{% endif %},
+  entries-highlights-space-between-items: {% if design.entries.highlights.space_between_items %}{{ design.entries.highlights.space_between_items }}{% elif design.highlights.vertical_space_between_highlights %}{{ design.highlights.vertical_space_between_highlights }}{% else %}0.12cm{% endif %},
+  entries-highlights-space-between-bullet-and-text: {% if design.entries.highlights.space_between_bullet_and_text %}{{ design.entries.highlights.space_between_bullet_and_text }}{% elif design.highlights.horizontal_space_between_bullet_and_highlight %}{{ design.highlights.horizontal_space_between_bullet_and_highlight }}{% else %}0.5em{% endif %},
+  date: datetime(
+    year: {{ settings.current_date.year }},
+    month: {{ settings.current_date.month }},
+    day: {{ settings.current_date.day }},
   ),
-  paper: design-page-size,
-  footer: if design-page-show-page-numbering {
-    text(
-      fill: design-colors-last-updated-date-and-page-numbering,
-      align(center, [_#locale-catalog-page-numbering-style _]),
-      size: 0.9em,
-    )
-  } else {
-    none
-  },
-  footer-descent: 0% - 0.3em + design-page-bottom-margin / 2,
 )
-// Text settings:
-#let justify
-#let hyphenate
-#if design-text-alignment == "justified" {
-  justify = true
-  hyphenate = true
-} else if design-text-alignment == "left" {
-  justify = false
-  hyphenate = false
-} else if design-text-alignment == "justified-with-no-hyphenation" {
-  justify = true
-  hyphenate = false
-}
-#set text(
-  font: design-text-font-family,
-  size: design-text-font-size,
-  lang: locale-catalog-language,
-  hyphenate: hyphenate,
-  fill: design-colors-text,
-  // Disable ligatures for better ATS compatibility:
-  ligatures: true,
-)
-#set par(
-  spacing: 0pt,
-  leading: design-text-leading,
-  justify: justify,
-)
-#set enum(
-  spacing: design-entries-vertical-space-between-entries,
-)
-
-// Highlights settings:
-#let highlights(..content) = {
-  list(
-    ..content,
-    marker: design-highlights-bullet,
-    spacing: design-highlights-vertical-space-between-highlights,
-    indent: design-highlights-left-margin,
-    body-indent: design-highlights-horizontal-space-between-bullet-and-highlights,
-  )
-}
-#show list: set list(
-  marker: design-highlights-nested-bullet,
-  spacing: design-highlights-vertical-space-between-highlights,
-  indent: 0pt,
-  body-indent: design-highlights-horizontal-space-between-bullet-and-highlights,
-)
-
-// Entry utilities:
-#let bullet-entry(..content) = {
-  list(
-    ..content,
-    marker: design-highlights-bullet,
-    spacing: 0pt,
-    indent: 0pt,
-    body-indent: design-highlights-horizontal-space-between-bullet-and-highlights,
-  )
-}
-#let three-col(
-  left-column-width: 1fr,
-  middle-column-width: 1fr,
-  right-column-width: design-entries-date-and-location-width,
-  left-content: "",
-  middle-content: "",
-  right-content: "",
-  alignments: (auto, auto, auto),
-) = [
-  #block(
-    grid(
-      columns: (left-column-width, middle-column-width, right-column-width),
-      column-gutter: design-entries-horizontal-space-between-columns,
-      align: alignments,
-      ([#set par(spacing: design-text-leading); #left-content]),
-      ([#set par(spacing: design-text-leading); #middle-content]),
-      ([#set par(spacing: design-text-leading); #right-content]),
-    ),
-    breakable: true,
-    width: 100%,
-  )
-]
-
-#let two-col(
-  left-column-width: 1fr,
-  right-column-width: design-entries-date-and-location-width,
-  left-content: "",
-  right-content: "",
-  alignments: (auto, auto),
-  column-gutter: design-entries-horizontal-space-between-columns,
-) = [
-  #block(
-    grid(
-      columns: (left-column-width, right-column-width),
-      column-gutter: column-gutter,
-      align: alignments,
-      ([#set par(spacing: design-text-leading); #left-content]),
-      ([#set par(spacing: design-text-leading); #right-content]),
-    ),
-    breakable: true,
-    width: 100%,
-  )
-]
-
-// Main heading settings:
-#let header-font-weight
-#if design-header-name-bold {
-  header-font-weight = 700
-} else {
-  header-font-weight = 400
-}
-#show heading.where(level: 1): it => [
-  #set par(spacing: 0pt)
-  #set align(design-header-alignment)
-  #set text(
-    font: design-header-name-font-family,
-    weight: header-font-weight,
-    size: design-header-name-font-size,
-    fill: design-colors-name,
-  )
-  #if design-header-small-caps-for-name [
-    #smallcaps(it.body)
-  ] else [
-    #it.body
-  ]
-  // Vertical space after the name
-  #v(design-header-vertical-space-between-name-and-connections)
-]
-
-#let section-title-font-weight
-#if design-section-titles-bold {
-  section-title-font-weight = 700
-} else {
-  section-title-font-weight = 400
-}
-
-#show heading.where(level: 2): it => [
-  #set align(left)
-  #set text(size: (1em / 1.2)) // reset
-  #set text(
-    font: design-section-titles-font-family,
-    size: (design-section-titles-font-size),
-    weight: section-title-font-weight,
-    fill: design-colors-section-titles,
-  )
-  #let section-title = (
-    if design-section-titles-small-caps [
-      #smallcaps(it.body)
-    ] else [
-      #it.body
-    ]
-  )
-  // Vertical space above the section title
-  #v(design-section-titles-vertical-space-above, weak: true)
-  #block(
-    breakable: false,
-    width: 100%,
-    [
-      #if design-section-titles-type == "moderncv" [
-        #two-col(
-          alignments: (right, left),
-          left-column-width: design-entries-date-and-location-width,
-          right-column-width: 1fr,
-          left-content: [
-            #align(horizon, box(width: 1fr, height: design-section-titles-line-thickness, fill: design-colors-section-titles))
-          ],
-          right-content: [
-            #section-title
-          ]
-        )
-
-      ] else [
-        #box(
-          [
-            #section-title
-            #if design-section-titles-type == "with-partial-line" [
-              #box(width: 1fr, height: design-section-titles-line-thickness, fill: design-colors-section-titles)
-            ] else if design-section-titles-type == "with-full-line" [
-
-              #v(design-text-font-size * 0.4)
-              #box(width: 1fr, height: design-section-titles-line-thickness, fill: design-colors-section-titles)
-            ]
-          ]
-        )
-      ]
-     ] + v(1em),
-  )
-  #v(-1em)
-  // Vertical space after the section title
-  #v(design-section-titles-vertical-space-below - 0.5em)
-]
-
-// Links:
-#let original-link = link
-#let link(url, body) = {
-  body = [#if design-links-underline [#underline(body)] else [#body]]
-  body = [#if design-links-use-external-link-icon [#body#h(design-text-font-size/4)#box(
-        fa-icon("external-link", size: 0.7em),
-        baseline: -10%,
-      )] else [#body]]
-  body = [#set text(fill: design-colors-links);#body]
-  original-link(url, body)
-}
-
-// Last updated date text:
-#if design-page-show-last-updated-date {
-  let dx
-  if design-section-titles-type == "moderncv" {
-    dx = 0cm
-  } else {
-    dx = -design-entries-left-and-right-margin
-  }
-  place(
-    top + right,
-    dy: -design-page-top-margin / 2,
-    dx: dx,
-    text(
-      [_#locale-catalog-last-updated-date-style _],
-      fill: design-colors-last-updated-date-and-page-numbering,
-      size: 0.9em,
-    ),
-  )
-}
-
-#let connections(connections-list) = context {
-  set text(fill: design-colors-connections, font: design-header-connections-font-family, size: 0.85em)
-  set par(leading: design-text-leading*1.7, justify: false)
-  let list-of-connections = ()
-  let separator = (
-    h(design-header-horizontal-space-between-connections / 2, weak: true)
-      + design-header-separator-between-connections
-      + h(design-header-horizontal-space-between-connections / 2, weak: true)
-  )
-  let starting-index = 0
-  while (starting-index < connections-list.len()) {
-    let ending-index = starting-index + 2
-    if ending-index > connections-list.len() {
-      ending-index = connections-list.len()
-    }
-    list-of-connections.push(connections-list.slice(starting-index, ending-index).join(separator))
-    starting-index = ending-index
-  }
-  // align(grid(columns: 1, gutter: 12pt, ..list-of-connections), design-header-alignment)
-  align(connections-list.join(separator), design-header-alignment)
-  v(design-header-vertical-space-between-connections-and-first-section - design-section-titles-vertical-space-above)
-}
-
-#let three-col-entry(
-  left-column-width: 1fr,
-  right-column-width: design-entries-date-and-location-width,
-  left-content: "",
-  middle-content: "",
-  right-content: "",
-  alignments: (left, auto, right),
-) = (
-  if design-section-titles-type == "moderncv" [
-    #three-col(
-      left-column-width: right-column-width,
-      middle-column-width: left-column-width,
-      right-column-width: 1fr,
-      left-content: right-content,
-      middle-content: [
-        #block(
-          [
-            #left-content
-          ],
-          inset: (
-            left: design-entries-left-and-right-margin,
-            right: design-entries-left-and-right-margin,
-          ),
-          breakable: design-entries-allow-page-break-in-entries,
-          width: 100%,
-        )
-      ],
-      right-content: middle-content,
-      alignments: (design-text-date-and-location-column-alignment, left, auto),
-    )
-  ] else [
-    #block(
-      [
-        #three-col(
-          left-column-width: left-column-width,
-          right-column-width: right-column-width,
-          left-content: left-content,
-          middle-content: middle-content,
-          right-content: right-content,
-          alignments: alignments,
-        )
-      ],
-      inset: (
-        left: design-entries-left-and-right-margin,
-        right: design-entries-left-and-right-margin,
-      ),
-      breakable: design-entries-allow-page-break-in-entries,
-      width: 100%,
-    )
-  ]
-)
-
-#let two-col-entry(
-  left-column-width: 1fr,
-  right-column-width: design-entries-date-and-location-width,
-  left-content: "",
-  right-content: "",
-  alignments: (auto, design-text-date-and-location-column-alignment),
-  column-gutter: design-entries-horizontal-space-between-columns,
-) = (
-  if design-section-titles-type == "moderncv" [
-    #two-col(
-      left-column-width: right-column-width,
-      right-column-width: left-column-width,
-      left-content: right-content,
-      right-content: [
-        #block(
-          [
-            #left-content
-          ],
-          inset: (
-            left: design-entries-left-and-right-margin,
-            right: design-entries-left-and-right-margin,
-          ),
-          breakable: design-entries-allow-page-break-in-entries,
-          width: 100%,
-        )
-      ],
-      alignments: (design-text-date-and-location-column-alignment, auto),
-    )
-  ] else [
-    #block(
-      [
-        #two-col(
-          left-column-width: left-column-width,
-          right-column-width: right-column-width,
-          left-content: left-content,
-          right-content: right-content,
-          alignments: alignments,
-        )
-      ],
-      inset: (
-        left: design-entries-left-and-right-margin,
-        right: design-entries-left-and-right-margin,
-      ),
-      breakable: design-entries-allow-page-break-in-entries,
-      width: 100%,
-    )
-  ]
-)
-
-#let one-col-entry(content: "") = [
-  #let left-space = design-entries-left-and-right-margin
-  #if design-section-titles-type == "moderncv" [
-    #(left-space = left-space + design-entries-date-and-location-width + design-entries-horizontal-space-between-columns)
-  ]
-  #block(
-    [#set par(spacing: design-text-leading); #content],
-    breakable: design-entries-allow-page-break-in-entries,
-    inset: (
-      left: left-space,
-      right: design-entries-left-and-right-margin,
-    ),
-    width: 100%,
-  )
-]
