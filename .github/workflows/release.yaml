@@ -9,21 +9,21 @@ permissions:
   contents: write
   
 jobs:
-  call_rendercv_workflow:
-    name: RenderCV
-    uses: ./.github/workflows/rendercv.yaml
-
-  build:
-    needs: call_rendercv_workflow
+  release:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Download
-        uses: actions/download-artifact@v4
+      - uses: actions/setup-python@v5
         with:
-          name: Render CV Output
-          path: output
+          python-version: "3.12"
+      - name: Install
+        run: |
+          pip install pyyaml reportlab --break-system-packages
+      - name: Render
+        run: |
+          mkdir -p output
+          python src/generate_resume_pdf.py src/David_Ashman_CV.yaml output/David_Ashman_CV.pdf output/David_Ashman_Bio.pdf
       - name: Release
         uses: softprops/action-gh-release@v2
         with:
