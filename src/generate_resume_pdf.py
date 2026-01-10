@@ -21,11 +21,11 @@ from reportlab.lib.enums import TA_LEFT, TA_CENTER
 import sys
 import os
 
-pdfmetrics.registerFont(TTFont('Raleway-Light', 'src/fonts/Raleway/Raleway-Light.ttf'))
-pdfmetrics.registerFont(TTFont('Raleway-LightItalic', 'src/fonts/Raleway/Raleway-LightItalic.ttf'))
+# pdfmetrics.registerFont(TTFont('Raleway-Light', 'src/fonts/Raleway/Raleway-Light.ttf'))
+# pdfmetrics.registerFont(TTFont('Raleway-LightItalic', 'src/fonts/Raleway/Raleway-LightItalic.ttf'))
+# pdfmetrics.registerFont(TTFont('Raleway-Medium', 'src/fonts/Raleway/Raleway-Medium.ttf'))
 pdfmetrics.registerFont(TTFont('Raleway-Regular', 'src/fonts/Raleway/Raleway-Regular.ttf'))
 pdfmetrics.registerFont(TTFont('Raleway-Italic', 'src/fonts/Raleway/Raleway-Italic.ttf'))
-pdfmetrics.registerFont(TTFont('Raleway-Medium', 'src/fonts/Raleway/Raleway-Medium.ttf'))
 pdfmetrics.registerFont(TTFont('Raleway-SemiBold', 'src/fonts/Raleway/Raleway-SemiBold.ttf'))
 
 headingColor = colors.HexColor('#204E8C')
