@@ -6,66 +6,66 @@ cv:
   photo: profile_picture.png
   summary: Technology leader with 20+ years of experience scaling SaaS platforms, modernizing cloud architectures, and guiding companies through hypergrowth and M&A. Expert at aligning technology with business strategy, building high-performance global teams, and delivering measurable impact. Recognized for driving revenue growth while managing to budgets.
   social_networks:
-  - network: LinkedIn
-    username: davidbashman
+    - network: LinkedIn
+      username: davidbashman
   sections:
     executive_experience:
-    - company: '[Archway](https://www.goarchway.com)'
-      position: Chief Technology Officer
-      location: Washington D.C. Metro Area
-      start_date: '2025-05-23'
-      end_date: present
-      summary: Factional and consulting CTO for early stage startups and scaleups.
-      highlights:
-      - Served as CTO for early-stage startup, establishing technical foundation and development practices to reach product viability
-      - Evaluated AI's transformational impact on engineering organizations, recommending structural changes to optimize team productivity and delivery velocity
-      - Developed frameworks for responsible AI product integration with student safety guardrails and content controls for education technology applications
-    - company: '[Interfolio from Elsevier](https://www.interfolio.com)'
-      position: Senior Vice President, Engineering
-      location: Washington D.C. Metro Area
-      start_date: '2019-08-31'
-      end_date: '2025-05-23'
-      summary: Directed global product engineering, architecture, QA, and DevOps for a SaaS leader in faculty information systems.
-      highlights:
-      - Drove 125% revenue growth by scaling technology organization and positioning company for successful acquisition by Elsevier.
-      - Tripled engineering team while optimizing spend through strategic near-shore/off-shore partnerships.
-      - Expanded global footprint with 3 new AWS regions (EU, Canada, Australia) while holding costs flat via cloud cost optimization, autoscaling, and containerization.
-      - Reduced manual QA by 75% with test automation strategy, accelerating release cycles.
-      - Increased deployment frequency 400% (to 150+ per year) with CI/CD automation and bots.
-      - Achieved ISO27001 & TX-RAMP certifications, strengthening security, compliance, and customer trust.
-      - Championed Scaled Agile Framework adoption, boosting cross-functional planning and delivery.
-    - company: '[Capital One](https://www.capitalone.com)'
-      position: Head of Digital Product and Software Delivery Architecture
-      location: Washington D.C. Metro Area
-      start_date: '2018-05-31'
-      end_date: '2019-08-31'
-      summary: Led architecture strategy for consumer digital products, e-commerce solutions, and software delivery pipelines.
-      highlights:
-      - Architected major Walmart partnership, designing scalable consumer product integrations.
-      - Established best-practice AWS architectures for large-scale consumer digital products.
-      - Partnered with innovation labs to transition emerging technologies into production.
-      - Consolidated CI/CD pipelines across multiple products, streamlining release management.
-    - company: '[Teaching Strategies](https://www.teachingstrategies.com)'
-      position: Chief Technology Officer
-      location: Washington D.C. Metro Area
-      start_date: '2015-03-31'
-      end_date: '2018-04-30'
-      summary: Oversaw technology development, product management, and operations for a leading early childhood education SaaS provider.
-      highlights:
-      - Rebuilt tech org from contractors to in-house talent, creating a sustainable, high-performing engineering culture.
-      - Reduced operational costs by 30% through Linux/open-source migration from legacy Windows stack.
-      - Achieved SOC2 Type II certification, elevating platform reliability and customer trust.
-      - Drove zero change failures by implementing CI/CD pipelines and test automation.
-    - company: '[Blackboard](https://www.blackboard.com)'
-      position: Vice President, Chief Architect
-      location: Washington D.C. Metro Area
-      start_date: '2005-09-30'
-      end_date: '2015-03-31'
-      summary: Held progressive leadership roles culminating in VP & Chief Architect for Blackboard Learn, serving millions of students globally.
-      highlights:
-      - Cut deployment times 80% by leading SaaS transformation of Blackboard Learn.
-      - Accelerated release cadence from biannual to monthly with pluggable extension architecture.
-      - Owned enterprise technical roadmap, modernizing architecture and ensuring product scalability.
+      - company: "[Archway](https://www.goarchway.com)"
+        position: Chief Technology Officer
+        location: Washington D.C. Metro Area
+        start_date: "2025-05-23"
+        end_date: present
+        summary: Archway provides fractional CTO and technology strategy consulting, helping organizations scale products, adopt AI, and build high-performing engineering teams.
+        highlights:
+          - Served as CTO for early-stage startup, establishing technical foundation and development practices to reach product viability
+          - Evaluated AI's transformational impact on engineering organizations, recommending structural changes to optimize team productivity and delivery velocity
+          - Developed frameworks for responsible AI product integration with student safety guardrails and content controls for education technology applications
+      - company: "[Interfolio from Elsevier](https://www.interfolio.com)"
+        position: Senior Vice President, Engineering
+        location: Washington D.C. Metro Area
+        start_date: "2019-08-31"
+        end_date: "2025-05-23"
+        summary: Interfolio (Insight Partners, acquired by Elsevier) develops faculty lifecycle management software for over 500 colleges and universities.
+        highlights:
+          - Drove 125% revenue growth by scaling technology organization and positioning company for successful acquisition by Elsevier.
+          - Optimized spend through strategic near-shore/off-shore partnerships while growing team capacity.
+          - Expanded global operations footprint with 3 new AWS regions (EU, Canada, Australia) while holding costs flat via cloud cost optimization, autoscaling, and containerization.
+          - Reduced manual QA by 75% with test automation strategy, accelerating release cycles.
+          - Increased deployment frequency 400% (to 150+ per year) with CI/CD automation and bots.
+          - Achieved ISO27001 & TX-RAMP certifications, strengthening security, compliance, and customer trust.
+          - Championed Scaled Agile Framework adoption, boosting cross-functional planning and delivery.
+      - company: "[Capital One](https://www.capitalone.com)"
+        position: Head of Digital Product and Software Delivery Architecture
+        location: Washington D.C. Metro Area
+        start_date: "2018-05-31"
+        end_date: "2019-08-31"
+        summary: Capital One is a Fortune 500 bank and leading digital financial services company.
+        highlights:
+          - Architected major Walmart partnership, designing scalable consumer product integrations.
+          - Established best-practice AWS architectures for large-scale consumer digital products.
+          - Partnered with innovation labs to transition emerging technologies into production.
+          - Consolidated CI/CD pipelines across multiple products, streamlining release management.
+      - company: "[Teaching Strategies](https://www.teachingstrategies.com)"
+        position: Chief Technology Officer
+        location: Washington D.C. Metro Area
+        start_date: "2015-03-31"
+        end_date: "2018-04-30"
+        summary: Teaching Strategies (acquired by Vista Equity Partners) provides early childhood curriculum, assessment, and family engagement solutions to 240K+ classrooms worldwide.
+        highlights:
+          - Rebuilt tech org from contractors to in-house talent, creating a sustainable, high-performing engineering culture.
+          - Reduced operational costs by 30% through Linux/open-source migration from legacy Windows stack.
+          - Achieved SOC2 Type II certification, elevating platform reliability and customer trust.
+          - Drove zero change failures by implementing CI/CD pipelines and test automation.
+      - company: "[Blackboard](https://www.blackboard.com)"
+        position: Vice President, Chief Architect
+        location: Washington D.C. Metro Area
+        start_date: "2005-09-30"
+        end_date: "2015-03-31"
+        summary: Blackboard (acquired by Providence Equity Partners) is a global EdTech leader providing learning management systems to educational institutions worldwide.
+        highlights:
+          - Cut deployment times 80% by leading SaaS transformation of Blackboard Learn.
+          - Accelerated release cadence from biannual to monthly with pluggable extension architecture.
+          - Owned enterprise technical roadmap, modernizing architecture and ensuring product scalability.
     core_expertise:
       - label: Executive Leadership
         details: Strategy, M&A, Global Team Scaling, Board & Investor Engagement
@@ -77,33 +77,33 @@ cv:
         details: AI/ML, LLMs, Agentic AI
     thought_leadership:
       - label: Speaker
-        details: '[CTO Summit - Stacks of Stacks Panel Discussion](https://ti.to/startup-cto-summit/dc/en)'
+        details: "[CTO Summit - Stacks of Stacks Panel Discussion](https://ti.to/startup-cto-summit/dc/en)"
       - label: Speaker
-        details: '[DevOps Enterprise Summit - Keep Your Head in the Clouds](https://www.youtube.com/watch?v=SSmixnMpsI4&feature=youtu.be)'
+        details: "[DevOps Enterprise Summit - Keep Your Head in the Clouds](https://www.youtube.com/watch?v=SSmixnMpsI4&feature=youtu.be)"
       - label: Featured
-        details: '[The DevOps Handbook - Case Study: Blackboard Learn](http://itrevolution.com/devops-handbook)'
+        details: "[The DevOps Handbook - Case Study: Blackboard Learn](http://itrevolution.com/devops-handbook)"
       - label: Interviewed
-        details: '[IT Revolution - Interview with David Ashman, Chief Architect at Blackboard Learn](http://itrevolution.com/interview-with-david-ashman-chief-architect-at-blackboard-learn/)'
+        details: "[IT Revolution - Interview with David Ashman, Chief Architect at Blackboard Learn](http://itrevolution.com/interview-with-david-ashman-chief-architect-at-blackboard-learn/)"
     education:
-    - degree: BS
-      area: Computer Science
-      institution: '[Washington University in St. Louis](https://www.washu.edu)'
-      start_date: 1993-08
-      end_date: 1997-05
+      - degree: BS
+        area: Computer Science
+        institution: "[Washington University in St. Louis](https://www.washu.edu)"
+        start_date: 1993-08
+        end_date: 1997-05
     executive_bio:
-    - |-
-      David Ashman is a transformational technology leader with a proven playbook for scaling SaaS platforms, improving margins, and preparing companies for successful 
-      exits. Over two decades, he has repeatedly built and led global engineering organizations through rapid growth, digital transformation, and M&A, delivering 
-      measurable revenue acceleration and operational efficiency.
-    - |-
-      As SVP of Engineering at Interfolio (acquired by Elsevier), David tripled the engineering team while holding expenses flat, driving 125% revenue growth and 
-      expanding the company’s AWS footprint globally. He accelerated deployment velocity by 400% through CI/CD automation, achieved ISO27001 and TX-RAMP certifications, 
-      and positioned the company for a strategic acquisition.
-    - |-
-      Previously, as CTO of Teaching Strategies, David reshaped a contractor-heavy team into a high-performing engineering culture, cutting operational costs by 30%, achieving 
-      SOC2 Type II compliance, and implementing cloud and open-source platforms that scaled with demand. Earlier at Blackboard, he led the SaaS transformation of Blackboard Learn, 
-      reducing deployment times by 80% and increasing release cadence from biannual to monthly.
-    - |- 
-      David’s expertise spans SaaS scaling, cloud economics, security & compliance, and AI adoption. As a forward-facing technology executive, he specializes in translating AI 
-      strategy into business value, helping organizations navigate the complexities of enterprise AI implementation while maintaining operational excellence. He is a recognized 
-      thought leader, featured in The DevOps Handbook and on stage at the CTO Summit and DevOps Enterprise Summit.
+      - |-
+        David Ashman is a transformational technology leader with a proven playbook for scaling SaaS platforms, improving margins, and preparing companies for successful
+        exits. Over two decades, he has repeatedly built and led global engineering organizations through rapid growth, digital transformation, and M&A, delivering
+        measurable revenue acceleration and operational efficiency.
+      - |-
+        As SVP of Engineering at Interfolio (acquired by Elsevier), David tripled the engineering team while holding expenses flat, driving 125% revenue growth and
+        expanding the company’s AWS footprint globally. He accelerated deployment velocity by 400% through CI/CD automation, achieved ISO27001 and TX-RAMP certifications,
+        and positioned the company for a strategic acquisition.
+      - |-
+        Previously, as CTO of Teaching Strategies, David reshaped a contractor-heavy team into a high-performing engineering culture, cutting operational costs by 30%, achieving
+        SOC2 Type II compliance, and implementing cloud and open-source platforms that scaled with demand. Earlier at Blackboard, he led the SaaS transformation of Blackboard Learn,
+        reducing deployment times by 80% and increasing release cadence from biannual to monthly.
+      - |-
+        David’s expertise spans SaaS scaling, cloud economics, security & compliance, and AI adoption. As a forward-facing technology executive, he specializes in translating AI
+        strategy into business value, helping organizations navigate the complexities of enterprise AI implementation while maintaining operational excellence. He is a recognized
+        thought leader, featured in The DevOps Handbook and on stage at the CTO Summit and DevOps Enterprise Summit.
